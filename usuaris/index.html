@@ -13,13 +13,15 @@
         <link rel="prev" href="../arrancada/">
       
       
+        <link rel="next" href="../fitxers/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
     
     
       
-        <title>Usuaris - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Gestió d'usuaris - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -75,6 +77,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#gestio-dusuaris" class="md-skip">
+          Saltar a contenido
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -105,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Usuaris
+              Gestió d'usuaris
             
           </span>
         </div>
@@ -532,17 +539,191 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gestió d'usuaris
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
-    Usuaris
+    Gestió d'usuaris
   </span>
   
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#afegir-i-eliminar-usuaris" class="md-nav__link">
+    Afegir i eliminar usuaris
+  </a>
+  
+    <nav class="md-nav" aria-label="Afegir i eliminar usuaris">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#afegir-usuari-amb-adduser" class="md-nav__link">
+    Afegir usuari amb adduser
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afegir-usuari-sense-carpeta-personal" class="md-nav__link">
+    Afegir usuari sense carpeta personal
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eliminar-un-usuari" class="md-nav__link">
+    Eliminar un usuari
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bloquejar-i-desbloquejar-un-usuari" class="md-nav__link">
+    Bloquejar i desbloquejar un usuari
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-del-directori-etcskel" class="md-nav__link">
+    Configuració del directori /etc/skel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-per-defecte-dels-nous-usuaris" class="md-nav__link">
+    Configuració per defecte dels nous usuaris
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestio-de-grups" class="md-nav__link">
+    Gestió de grups
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestió de grups">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#crear-un-grup" class="md-nav__link">
+    Crear un grup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#afegir-un-usuari-a-un-grup" class="md-nav__link">
+    Afegir un usuari a un grup
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fitxers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fitxers importants
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../procesos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Gestió de procesos
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../permisos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Permisos en linux
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -570,9 +751,108 @@
                   
 
 
-  <h1>Usuaris</h1>
-
-
+<h1 id="gestio-dusuaris">Gestió d'usuaris</h1>
+<p>Aquí aprendrem a gestionar els usuaris dintre d'un sistema linux, això ajuda molt en espais on hi han diferents usuaris que poden tenir diferents permisos. Per exemple, en un institut, podriem tenir l'usuari profressor o l'usuari alumne, cadascun amb uns permisos diferents. </p>
+<p>En aquesta part de la pàgina aprendrem a fer això</p>
+<h2 id="afegir-i-eliminar-usuaris"><strong>Afegir i eliminar usuaris</strong></h2>
+<h3 id="afegir-usuari-amb-adduser"><strong>Afegir usuari amb adduser</strong></h3>
+<p>Per començar, afegirem un usuari nou amb una simple comanda. I on pregunta alguns camps, si els volem posar per defecte, simplement cliquem a al atecla enter.</p>
+<pre><code>sudo adduser nom_usuari
+</code></pre>
+<p><img alt="alt text" src="../custom/usuaris1.png" width="50%" /></p>
+<p>Ara per comprovar que tot funciona correctament, iniciem l'usuari nou, en el meu cas l'usuari es diu "levi". Podem veure que a l'hora de seleccionar un usuari a parte del usuari predeterminat que teniem abans, ens surt l'usuari creat anteriorment.</p>
+<p><img alt="alt text" src="../custom/usuaris2.png" width="50%" /></p>
+<p>Per comprovar que realment tenim l'usuari seleccionat també podem utilitzar la comanda whoami.</p>
+<h3 id="afegir-usuari-sense-carpeta-personal"><strong>Afegir usuari sense carpeta personal</strong></h3>
+<p>Per a crear un usuari sense carpeta persona dintre del sistema podem utilitzar una comanda diferent:</p>
+<pre><code>sudo useradd eren
+</code></pre>
+<p><img alt="alt text" src="../custom/usuaris7.png" width="50%" /></p>
+<p>Com podem veure, no hi ha cap carpeta anomenada "eren" encara que haguéssim creat un usuari amb aqest nom. Igualment, es pot afegir aquesta carpeta amb la següent comanda:</p>
+<pre><code>sudo mkdir /home/eren
+</code></pre>
+<p>La comanda de adalt crearà la carpeta, però no donarà permisos al usuari com a propietari, llavors també hem de fer la següent comanda per a que l'usuari eren sigui el propietari d'aquesta.</p>
+<pre><code>sudo chown eren:eren /home/eren
+</code></pre>
+<p>Aquesta comanda el que fa és canviar el protpietari, tal com significa chown (change owner). La part de eren:eren especifica el usuari i el grup del usuari, com que l'usuari eren no forma part de cap grup, llavors hem de posar el mateix dues vegades</p>
+<h3 id="eliminar-un-usuari"><strong>Eliminar un usuari</strong></h3>
+<p>Per eliminar un usuari però no eliminar els seus fitxers hem d'utilitzar la següent comanda:</p>
+<pre><code>sudo deluser nom_usuari
+</code></pre>
+<p><img alt="alt text" src="../custom/usuaris3.png" width="50%" /></p>
+<p>Si voleu eliminar l'usuari i els seus arxius hem d'utilitzar una comanda diferent:</p>
+<pre><code>sudo rm -rf /home/nom_usuari
+</code></pre>
+<p><img alt="alt text" src="../custom/usuaris5.png" width="50%" /></p>
+<h2 id="bloquejar-i-desbloquejar-un-usuari"><strong>Bloquejar i desbloquejar un usuari</strong></h2>
+<p>Per a bloquejar l'accés a un usuari en el dispositiu hem de utilitzar la següent comanda:</p>
+<pre><code>sudo usermod -L levi
+</code></pre>
+<p>De la mateixa manera, per desbloquejar-lo utilitzarem la següent comanda:</p>
+<pre><code>sudo usermod -U levi
+</code></pre>
+<p><img alt="alt text" src="../custom/usuaris6.png" width="50%" /></p>
+<h2 id="configuracio-del-directori-etcskel"><strong>Configuració del directori /etc/skel</strong></h2>
+<p>El directori /etc/skel conté els fitxers per defecte que s'afegeixen a cada nou usuari que creem podem examinar aquest directori am b la següent comanda:</p>
+<pre><code>ls -la /etc/skel
+</code></pre>
+<p><img alt="alt text" src="../custom/usuaris8.png" width="50%" /></p>
+<p>En la anterior imatge, podem aprecioar 3 arxius diferents:</p>
+<ul>
+<li>
+<p><strong>.bash_logout</strong></p>
+<p>S'executa quan l'usuari tanca la sessió.</p>
+<p>S'utilitza per realitzar tasques finals, com netejar fitxers temporals o registrar l'activitat de l'usuari.</p>
+</li>
+<li>
+<p><strong>.bashrc</strong></p>
+<p>Fitxer de configuració per al shell Bash.</p>
+<p>Defineix alias, variables d'entorn, funcions personalitzades i comportament general del shell.</p>
+</li>
+<li>
+<p><strong>.profile</strong></p>
+<p>Executat quan un usuari inicia sessió.</p>
+<p>Configura variables d'entorn generals i comandes inicials.</p>
+</li>
+</ul>
+<h2 id="configuracio-per-defecte-dels-nous-usuaris"><strong>Configuració per defecte dels nous usuaris</strong></h2>
+<p>La configuració per defecte d'un usuari en un sistema Linux determina l'entorn inicial i els permisos que té aquest usuari després de ser creat. Aquesta configuració inclou aspectes com el directori personal, els fitxers inicials, l'entorn del shell i els permisos associats.</p>
+<p>El fitxer /etc/default/useradd defineix paràmetres predeterminats per a nous usuaris. Algunes configuracions clau són:</p>
+<ul>
+<li>SHELL: Shell predeterminat per als usuaris nous.</li>
+<li>HOME: Prefix del camí al directori personal.</li>
+<li>GROUP: Grup predeterminat.</li>
+<li>SKEL: Camí al directori /etc/skel.</li>
+</ul>
+<p>Per a comprovar-ho obrirem l'arxiu amb la següent comanda:</p>
+<pre><code>sudo nano /etc/default/useradd
+</code></pre>
+<p><img alt="alt text" src="../custom/usuaris9.png" width="50%" /></p>
+<h2 id="gestio-de-grups"><strong>Gestió de grups</strong></h2>
+<p>La gestió de grups en Linux és essencial per organitzar els permisos i facilitar l'administració del sistema. Els grups permeten controlar l'accés a fitxers, directoris i recursos compartits per un conjunt d’usuaris.</p>
+<ul>
+<li><strong>Grup</strong>: Una entitat que agrupa diversos usuaris per assignar permisos comuns.</li>
+<li><strong>Grup Primari</strong>: Cada usuari té un grup primari associat per defecte. Aquest es defineix en crear l'usuari.</li>
+<li><strong>Grups Secundaris</strong>: L’usuari pot pertànyer a múltiples grups secundaris per accedir a altres recursos.</li>
+</ul>
+<h3 id="crear-un-grup"><strong>Crear un grup</strong></h3>
+<p>Per crear un grup nou podem outilitzar aquesta comanda:</p>
+<pre><code>sudo groupadd cos_exploracio
+</code></pre>
+<p>I per a comprvar que s'hagi creat el grup, utilitzarem aquesta comanda:</p>
+<pre><code>cat /etc/group
+</code></pre>
+<p>Aquesta comanda ens proporcionara una llista molt gran d'usuaris, però no us preocupeu, només heu d'anar fins avall de tot i trobareu el nou grup</p>
+<p><img alt="alt text" src="../custom/grups1.png" width="50%" /></p>
+<p><img alt="alt text" src="../custom/grups2.png" width="50%" /></p>
+<h3 id="afegir-un-usuari-a-un-grup"><strong>Afegir un usuari a un grup</strong></h3>
+<p>Per afegir un usuari dintre d'un grup, el que hem de fer és la següent comanda:</p>
+<pre><code>sudo gpasswd -a levi cos_exploracio
+</code></pre>
+<p>I per a comprovar si hem afegit correctament l'usuari levi dintre del grup de cos_exploracio el que hem de fer és realitzar la següent comanda:</p>
+<pre><code>grep levi /etc/group
+</code></pre>
+<p><img alt="alt text" src="../custom/grups3.png" width="50%" /></p>
 
 
 
