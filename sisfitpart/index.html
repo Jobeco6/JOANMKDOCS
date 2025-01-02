@@ -10,10 +10,8 @@
       
       
       
-        <link rel="prev" href="../procesos/">
+        <link rel="prev" href="../permisos/">
       
-      
-        <link rel="next" href="../sisfitpart/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +19,7 @@
     
     
       
-        <title>Permisos en linux - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Sistemes de fitxers i particions - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#permisos-en-linux" class="md-skip">
+        <a href="#sistemes-de-fitxers-i-particions" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Permisos en linux
+              Sistemes de fitxers i particions
             
           </span>
         </div>
@@ -591,6 +589,26 @@
                 
   
   
+  
+    <li class="md-nav__item">
+      <a href="../permisos/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Permisos en linux
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -606,7 +624,7 @@
           
   
   <span class="md-ellipsis">
-    Permisos en linux
+    Sistemes de fitxers i particions
   </span>
   
 
@@ -617,7 +635,7 @@
         
   
   <span class="md-ellipsis">
-    Permisos en linux
+    Sistemes de fitxers i particions
   </span>
   
 
@@ -639,23 +657,150 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modificar-permisos" class="md-nav__link">
-    Modificar permisos
+  <a href="#estructura-de-la-informacio" class="md-nav__link">
+    Estructura de la informació
   </a>
+  
+    <nav class="md-nav" aria-label="Estructura de la informació">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mida-sector-i-bloc" class="md-nav__link">
+    Mida sector i bloc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fragmentacio-interna-i-externa" class="md-nav__link">
+    Fragmentació interna i externa
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#taula-permisos" class="md-nav__link">
-    Taula permisos
+  <a href="#tipus-de-formateig" class="md-nav__link">
+    Tipus de formateig
   </a>
+  
+    <nav class="md-nav" aria-label="Tipus de formateig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipus-de-formateig_1" class="md-nav__link">
+    Tipus de formateig
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipus de formateig">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formateig-de-baix-nivell" class="md-nav__link">
+    Formateig de Baix Nivell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formateig-de-nivell-mitja" class="md-nav__link">
+    Formateig de Nivell Mitjà
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#formateig-dalt-nivell-o-rapid" class="md-nav__link">
+    Formateig d'Alt Nivell o Ràpid
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#sticky-bit" class="md-nav__link">
-    Sticky bit
+  <a href="#creacio-de-particions-i-formats" class="md-nav__link">
+    Creació de particions i formats
   </a>
+  
+    <nav class="md-nav" aria-label="Creació de particions i formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacio-de-particions-i-formats_1" class="md-nav__link">
+    Creació de particions i formats
+  </a>
+  
+    <nav class="md-nav" aria-label="Creació de particions i formats">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tipus-de-particions" class="md-nav__link">
+    Tipus de particions
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestio-de-particions-amb-linux" class="md-nav__link">
+    Gestió de particions amb Linux
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestió de particions amb Linux">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#utilitzant-fdisk" class="md-nav__link">
+    Utilitzant fdisk
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilitzant-parted" class="md-nav__link">
+    Utilitzant parted
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utilitzant-gparted" class="md-nav__link">
+    Utilitzant gparted
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gestio-de-particions-amb-windows" class="md-nav__link">
+    Gestió de particions amb Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -663,26 +808,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../sisfitpart/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Sistemes de fitxers i particions
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -710,97 +835,149 @@
                   
 
 
-<h1 id="permisos-en-linux">Permisos en linux</h1>
-<p>Els permisos en Linux controlen qui pot llegir, executar o escriure fitxers o directoris:</p>
+<h1 id="sistemes-de-fitxers-i-particions">Sistemes de fitxers i particions</h1>
+<h2 id="estructura-de-la-informacio">Estructura de la informació</h2>
+<h3 id="mida-sector-i-bloc"><strong>Mida sector i bloc</strong></h3>
+<p>El sector és la unitat mínima física on es guarden les dades d'un disco. Per defecte és 512 bytes i aquesta mida no es pot canviar mai. Aquí, per comprovar que això sigui real crearem un arxiu amb touch, i l'editarem amb un nano. </p>
+<p><img alt="alt text" src="../custom/sector.png" width="50%" /></p>
+<p>Un cop tenim l'arxiu creat amb la comanda touch, l'editem i posem un text dintre.</p>
+<p><img alt="alt text" src="../custom/sector1.png" width="50%" /></p>
+<p>Un cop hem creat l'arxiu, comprovem que s'hagi creat correctament amb la comanda cat</p>
+<pre><code>cat erwin
+</code></pre>
+<p><img alt="alt text" src="../custom/sector2.png" width="50%" /></p>
+<p>Hem vist anteriorment que sí que existeix l'arxiu, per tant, obrirem la carpeta i premem el botó dret damunt de l'arxiu i després seleccionarem "Propietats". Com podem comprovar la mida de l'arxiu és de 5 bytes.</p>
+<p><img alt="alt text" src="../custom/sector3.png" width="50%" /></p>
+<p>Amb la comanda <code>du -sh</code>, el que estem fent és una comanda que permet veure a l'usuari la cantitat real de temps que esta gastant</p>
+<p>-<strong>du</strong>: és una abreviatura de "Disk usage", serveix per a inspeccionar l'ús despai en arxius i directoris.</p>
+<p>-<strong>-s</strong>: Fa que només es mostri l'arxiu especificat, i no es posi a detallar cada subdirectori.</p>
+<p>-<strong>h</strong>: Fa que mostri la mida del arxiu en bytes.</p>
+<p><img alt="alt text" src="../custom/sector4.png" width="50%" /></p>
+<p>Com hem pogut comprovar, l'arxiu realment ocupa 4 kbytes, fent que l'arxiu ocupi més del que realment ocupa. Aquestos 4 kbytes és el que ocupa cada bloc, és a dir, que cada bloc, està format per 8 sectors.</p>
+<h3 id="fragmentacio-interna-i-externa"><strong>Fragmentació interna i externa</strong></h3>
+<p><strong>La fragmentació interna és l’espai desaprofitat dins dels blocs perquè un fitxer no omple completament el bloc assignat</strong>. Això es pot reduir ajustant la mida dels blocs. Blocs més petits redueixen la fragmentació interna però poden disminuir el rendiment, especialment per a fitxers grans. Blocs més grans són eficients per a fitxers grans, però generen més fragmentació interna amb fitxers petits.</p>
+<p>Quan un sistema operatiu utilitza el disc amb el temps, pot aparèixer fragmentació externa, on els blocs d’un mateix fitxer queden dispersos al disc. Això perjudica el rendiment. Per resoldre-ho, alguns sistemes operatius implementen eines de desfragmentació, tot i que els sistemes moderns sovint minimitzen aquest problema de manera automàtica.</p>
+<h2 id="tipus-de-formateig">Tipus de formateig</h2>
+<h3 id="tipus-de-formateig_1">Tipus de formateig</h3>
+<h4 id="formateig-de-baix-nivell">Formateig de Baix Nivell</h4>
+<p>El formateig de baix nivell s'executa directament sobre el disc físic a nivell de sectors. Aquest tipus de formateig detecta i intenta reparar sectors defectuosos, esborrant completament els fitxers i fent que la seva recuperació sigui gairebé impossible. </p>
+<p><strong>Exemple pràctic:</strong> Aquest tipus de formateig és realitzat pels fabricants de discos abans de la seva distribució. Aquest procés crea la infraestructura física necessària per a l'emmagatzematge de dades. Els usuaris finals rarament realitzen aquest tipus de formateig, però hi ha eines especialitzades que permeten utilitzar-lo en casos de necessitat per reparar sectors defectuosos. Per exemple, si un disc dur presenta sectors defectuosos, es pot utilitzar una eina de formateig de baix nivell per intentar reparar-los i restaurar la funcionalitat del disc.</p>
+<h4 id="formateig-de-nivell-mitja">Formateig de Nivell Mitjà</h4>
+<p>El formateig de nivell mitjà configura el sistema de fitxers, com ara FAT32, NTFS o ext4. Aquest tipus de formateig no esborra físicament les dades, sinó que elimina la informació sobre la seva ubicació al sistema de fitxers. Això significa que els fitxers es poden recuperar amb eines especialitzades fins que es sobreescriguin.</p>
+<p><strong>Exemple pràctic:</strong> Un exemple comú de formateig de nivell mitjà és canviar el sistema de fitxers d'un disc dur extern de FAT32 a ext4 per millorar la compatibilitat amb sistemes Linux. Aquest tipus de formateig és útil quan necessites optimitzar el sistema de fitxers segons els tipus de dades que es gestionen. Per exemple, si tens un disc dur extern que utilitzes per emmagatzemar bases de dades grans, canviar el sistema de fitxers a ext4 et permetrà gestionar millor els fitxers sense limitacions de mida.</p>
+<h4 id="formateig-dalt-nivell-o-rapid">Formateig d'Alt Nivell o Ràpid</h4>
+<p>El formateig d'alt nivell o ràpid és una variant del formateig de nivell mitjà que elimina únicament les metadades del sistema de fitxers. Aquest tipus de formateig és més ràpid però menys segur si es vol evitar que les dades es puguin recuperar.</p>
+<p><strong>Exemple pràctic:</strong> Un exemple pràctic d'aquest tipus de formateig és utilitzar el formateig ràpid per reinicialitzar una targeta SD abans de gravar-hi noves fotos o vídeos. Aquest tipus de formateig s'usa habitualment per alliberar espai ràpidament sense eliminar físicament les dades existents. Per exemple, si necessites preparar una targeta SD per a una nova sessió de fotos i no t'importa que les dades antigues puguin ser recuperades, pots utilitzar el formateig ràpid per esborrar les metadades i començar de nou en pocs segons.</p>
+<h2 id="creacio-de-particions-i-formats">Creació de particions i formats</h2>
+<h3 id="creacio-de-particions-i-formats_1">Creació de particions i formats</h3>
+<p>Les particions són divisions lògiques d'un disc dur que permeten organitzar i gestionar millor l'espai d'emmagatzematge. Cada partició pot tenir un sistema de fitxers diferent i es pot utilitzar per a diferents finalitats, com ara instal·lar diversos sistemes operatius o separar dades personals dels fitxers del sistema.
+Avantatges de les particions:</p>
+<ol>
+<li><strong>Organització de dades</strong>: Permeten separar diferents tipus de dades, com ara fitxers del sistema operatiu, dades personals i aplicacions, facilitant la gestió i la seguretat de la informació.</li>
+<li><strong>Multi-sistema operatiu</strong>: Faciliten la instal·lació de múltiples sistemes operatius en un mateix disc dur, permetent als usuaris triar quin sistema arrencar.</li>
+<li><strong>Millora del rendiment</strong>: Poden ajudar a millorar el rendiment del sistema, ja que els fitxers del sistema operatiu es poden mantenir separats de les dades personals, reduint la fragmentació.</li>
+<li><strong>Seguretat de dades</strong>: En cas de fallada del sistema operatiu, les dades emmagatzemades en altres particions poden romandre intactes, facilitant la recuperació.</li>
+<li><strong>Còpies de seguretat</strong>: Faciliten la creació de còpies de seguretat, ja que es poden fer còpies de particions específiques en lloc de tot el disc dur.</li>
+<li><strong>Gestió d'espai</strong>: Permeten assignar espai d'emmagatzematge de manera més eficient segons les necessitats específiques de cada tipus de dades o aplicació.</li>
+</ol>
+<h4 id="tipus-de-particions">Tipus de particions</h4>
+<ol>
+<li><strong>Partició Primària</strong>: És una partició que pot contenir un sistema operatiu i és necessària per arrencar l'ordinador. Un disc dur pot tenir fins a quatre particions primàries.</li>
+<li><strong>Partició Estesa</strong>: És una partició que pot contenir múltiples particions lògiques. Només es pot crear una partició estesa per disc, però dins d'ella es poden crear diverses particions lògiques.</li>
+<li><strong>Partició Lògica</strong>: Són particions creades dins d'una partició estesa. No es poden utilitzar per arrencar el sistema operatiu, però són útils per organitzar dades.</li>
+</ol>
+<h3 id="gestio-de-particions-amb-linux"><strong>Gestió de particions amb Linux</strong></h3>
+<p>Per gestionar particions en Linux, es poden utilitzar diverses eines de línia de comandes i interfícies gràfiques. Algunes de les eines més comunes són <code>fdisk</code>, <code>parted</code> i <code>gparted</code>.</p>
+<h4 id="utilitzant-fdisk">Utilitzant <code>fdisk</code></h4>
+<p><code>fdisk</code> és una eina de línia de comandes per crear i manipular taules de particions.</p>
+<ol>
+<li>
+<p>Llistar les particions existents:
+    <code>sudo fdisk -l</code></p>
+</li>
+<li>
+<p>Obrir un disc per editar:
+    <code>sudo fdisk /dev/sdX</code></p>
+</li>
+<li>
+<p>Crear una nova partició:</p>
 <ul>
-<li><strong>r</strong>: Permet llegir</li>
-<li><strong>w</strong>: Permet escriure</li>
-<li><strong>x</strong>: Permet executar</li>
+<li>Premeu <code>n</code> per crear una nova partició.</li>
+<li>Seguiu les instruccions per especificar el tipus de partició i la mida.</li>
 </ul>
-<p>Aquí tenim una imatge de exemple per a comprovar com funciona</p>
-<p><img alt="alt text" src="../custom/chmod.png" /></p>
-<p>Podem veure que hi han 10 caràcters per als permisos, cada 3 caràcters és per a un usuari diferent:</p>
-<p>Els tres primers caràcters (obviant la d, que vol dir que és un directori) són per a el propietari del fitxer. Com podem comprovar té tots els permisos (rwx)</p>
-<p>Els altres tres son per al grup associat al fitxer. Com podem comprovar pot llegir i executar (-xr)</p>
-<p>I els tres últims son per a els altres usuaris. Només por executar (-x)</p>
-<h2 id="modificar-permisos"><strong>Modificar permisos</strong></h2>
-<p>Amb la comanda <code>chmod</code> podem modificar els permisos dels fitxers i directoris. Aquí hi ha alguns exemples de comandes <code>chmod</code>:</p>
+</li>
+<li>
+<p>Escriure els canvis i sortir:</p>
 <ul>
-<li><code>chmod 755 fitxer</code>: Assigna permisos de lectura, escriptura i execució per al propietari, i permisos de lectura i execució per al grup i altres usuaris.</li>
-<li><code>chmod 644 fitxer</code>: Assigna permisos de lectura i escriptura per al propietari, i només permisos de lectura per al grup i altres usuaris.</li>
-<li><code>chmod +x fitxer</code>: Afegeix el permís d'execució per a tots els usuaris.</li>
-<li><code>chmod -r fitxer</code>: Treu el permís de lectura per a tots els usuaris.</li>
-<li><code>chmod u+w fitxer</code>: Afegeix el permís d'escriptura només per al propietari.</li>
-<li><code>chmod g-r fitxer</code>: Treu el permís de lectura només per al grup.</li>
-<li><code>chmod o+x fitxer</code>: Afegeix el permís d'execució només per als altres usuaris.</li>
+<li>Premeu <code>w</code> per escriure els canvis al disc i sortir.</li>
 </ul>
-<p>Aquestes comandes ens permeten controlar qui pot accedir i modificar els nostres fitxers i directoris.</p>
-<h2 id="taula-permisos"><strong>Taula permisos</strong></h2>
-<table>
-<thead>
-<tr>
-<th>Número</th>
-<th>Permisos</th>
-<th>Descripció</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>---</td>
-<td>Sense permisos</td>
-</tr>
-<tr>
-<td>1</td>
-<td>--x</td>
-<td>Només executar</td>
-</tr>
-<tr>
-<td>2</td>
-<td>-w-</td>
-<td>Només escriure</td>
-</tr>
-<tr>
-<td>3</td>
-<td>-wx</td>
-<td>Escriure i executar</td>
-</tr>
-<tr>
-<td>4</td>
-<td>r--</td>
-<td>Només llegir</td>
-</tr>
-<tr>
-<td>5</td>
-<td>r-x</td>
-<td>Llegir i executar</td>
-</tr>
-<tr>
-<td>6</td>
-<td>rw-</td>
-<td>Llegir i escriure</td>
-</tr>
-<tr>
-<td>7</td>
-<td>rwx</td>
-<td>Llegir, escriure i executar</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sticky-bit"><strong>Sticky bit</strong></h2>
-<p>El <strong>sticky bit</strong> és un permís especial que es pot assignar a un directori. Quan el sticky bit està activat en un directori, només el propietari del fitxer, el propietari del directori o l'usuari root poden esborrar o canviar el nom dels fitxers dins d'aquest directori. Això és útil en directoris compartits on molts usuaris poden crear fitxers, però no es vol que puguin esborrar o modificar els fitxers d'altres usuaris.</p>
-<p>Per activar el sticky bit en un directori, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>+t</code>. Aquí hi ha un exemple:</p>
+</li>
+</ol>
+<h4 id="utilitzant-parted">Utilitzant <code>parted</code></h4>
+<p><code>parted</code> és una altra eina de línia de comandes que suporta particions GPT i MBR.</p>
+<ol>
+<li>
+<p>Iniciar <code>parted</code>:</p>
+<p><code>sudo parted /dev/sdX</code></p>
+</li>
+<li>
+<p>Crear una nova partició:
+    <code>(parted) mkpart primary ext4 0% 50%</code></p>
+</li>
+<li>
+<p>Verificar les particions:
+    <code>(parted) print</code></p>
+</li>
+<li>
+<p>Sortir:
+    <code>(parted) quit</code></p>
+</li>
+</ol>
+<h4 id="utilitzant-gparted">Utilitzant <code>gparted</code></h4>
+<p><code>gparted</code> és una interfície gràfica per a <code>parted</code>.</p>
+<ol>
+<li>
+<p>Instal·lar <code>gparted</code>:
+    <code>sudo apt-get install gparted</code></p>
+</li>
+<li>
+<p>Obrir <code>gparted</code>:
+    <code>sudo gparted</code></p>
+</li>
+<li>
+<p>Utilitzar la interfície gràfica per crear, redimensionar, moure i eliminar particions.</p>
+</li>
+</ol>
+<h3 id="gestio-de-particions-amb-windows"><strong>Gestió de particions amb Windows</strong></h3>
+<p>En Windows, es poden gestionar particions utilitzant l'eina de Gestió de Discos.</p>
+<ol>
+<li>
+<p>Obrir Gestió de Discos:</p>
 <ul>
-<li><code>chmod +t directori</code>: Activa el sticky bit en el directori especificat.</li>
+<li>Premeu <code>Win + X</code> i seleccioneu <code>Gestió de Discos</code>.</li>
 </ul>
-<p>Per desactivar el sticky bit, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>-t</code>:</p>
+</li>
+<li>
+<p>Crear una nova partició:</p>
 <ul>
-<li><code>chmod -t directori</code>: Desactiva el sticky bit en el directori especificat.</li>
+<li>Feu clic dret a l'espai no assignat i seleccioneu <code>Nou volum simple</code>.</li>
+<li>Seguiu l'assistent per especificar la mida i formatar la partició.</li>
 </ul>
-<p>Quan el sticky bit està activat, els permisos del directori es mostren amb una <code>t</code> al final dels permisos per als altres usuaris. Per exemple:</p>
+</li>
+<li>
+<p>Redimensionar una partició:</p>
 <ul>
-<li><code>drwxrwxrwt</code>: Indica que el directori té el sticky bit activat.</li>
+<li>Feu clic dret a la partició que voleu redimensionar i seleccioneu <code>Redueix volum</code> o <code>Amplia volum</code>.</li>
+<li>Seguiu l'assistent per especificar la nova mida.</li>
 </ul>
+</li>
+<li>
+<p>Eliminar una partició:</p>
+<ul>
+<li>Feu clic dret a la partició que voleu eliminar i seleccioneu <code>Suprimeix volum</code>.</li>
+</ul>
+</li>
+</ol>
 
 
 
