@@ -10,10 +10,8 @@
       
       
       
-        <link rel="prev" href="../puntsrestauracio/">
+        <link rel="prev" href="../sisfitpart/">
       
-      
-        <link rel="next" href="../timeshift/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +19,7 @@
     
     
       
-        <title>Configuració bàsica de xarxes - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Gestió de particions - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuracio-basica-de-xarxes" class="md-skip">
+        <a href="#gestio-de-particions" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuració bàsica de xarxes
+              Gestió de particions
             
           </span>
         </div>
@@ -221,12 +219,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../instalacio/" class="md-tabs__link">
           
   
@@ -241,10 +237,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../usuaris/" class="md-tabs__link">
           
   
@@ -314,19 +312,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
         
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
@@ -339,7 +335,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Sprint 1
@@ -410,18 +406,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../conf/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -430,7 +417,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -507,17 +493,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -530,7 +518,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Sprint 2
@@ -641,9 +629,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../gestioparticions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Gestió de particions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -652,6 +660,61 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creacio-duna-particio" class="md-nav__link">
+    Creació d'una partició
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particions-ext4" class="md-nav__link">
+    Particions EXT4
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#particions-ntfs" class="md-nav__link">
+    Particions NTFS
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#carpeta-a-la-particio-temporal" class="md-nav__link">
+    Carpeta a la partició temporal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#compartir-fitxers-en-xarxa" class="md-nav__link">
+    Compartir fitxers en xarxa
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -679,14 +742,97 @@
                   
 
 
-<h1 id="configuracio-basica-de-xarxes">Configuració bàsica de xarxes</h1>
-<p>Utilitzem l'eina Netplan, que es una eina utilitzada per gestionar la configuració de xarxes.</p>
-<p>Aqui ubiquem l'arxiu amb un ls  i el editem fent un nano.</p>
-<p><img alt="alt text" src="../custom/2024-10-10_13-08.png" /></p>
-<p>Una vegada obrim l'arxiu fent un nano, editem el text de dintre del arciu escribint el mateix que posa a la captura d'avall.</p>
-<p><img alt="alt text" src="../custom/2024-10-10_13-05.png" /></p>
-<p>Fem un sudo netplan apply per a confirmar.</p>
-<p><img alt="alt text" src="../custom/2024-10-10_13-19.png" /></p>
+<h1 id="gestio-de-particions">Gestió de particions</h1>
+<h2 id="creacio-duna-particio">Creació d'una partició</h2>
+<p>Ara aprendrem a com crear una partició tant en format ext4 com en NTFS</p>
+<p>El primer que farem és comprovar el nom de la nostra partició, en aquest cas, la meva es diu sdb, i té 10 GB d'emmagatzematge. I podem comprovar-ho mitjançant la comanda:</p>
+<pre><code>fdisk -l
+</code></pre>
+<p><img alt="alt text" src="../custom2/2025-01-02_23-25.png" width="70%" /></p>
+<p>Un cop ja tenim el nom del disc on volem crear la partició, ja podem començar amb la creació de la partició. Amb la comanda següent:</p>
+<pre><code>sudo fdisk /dev/sdb
+</code></pre>
+<p>Després d'executar la comanda, el que hem de fer és el següent:</p>
+<ul>
+<li>Escriure <code>n</code> per a crear una nova partició.</li>
+<li>Escriure <code>p</code> per a definir-la com una partició primària.</li>
+<li>Definir la mida de la partició, en aquest cas és a elecció pròpia, però jo he posat 20.000.000 bytes</li>
+<li>I molt important per a acabar i guardar hem d'escriure <code>w</code></li>
+</ul>
+<p><img alt="alt text" src="../custom2/p2.png" width="70%" /></p>
+<h2 id="particions-ext4">Particions EXT4</h2>
+<p>Un cop hem fet la partició, podrem formatar la partició en ext4 amb la següent comanda:</p>
+<pre><code>sudo mkfs.ext4 -b 2048 /dev/sdb1
+</code></pre>
+<p><img alt="alt text" src="../custom2/p3.png" width="70%" /></p>
+<p><strong>Mida del bloc</strong></p>
+<p>Amb la següent comanda podem fer la comprovació de la mida del bloc que hem donat a la particio.</p>
+<pre><code>sudo tune2fs -l /dev/sdb1 | grep Block
+</code></pre>
+<p><img alt="alt text" src="../custom2/p4.png" width="70%" /></p>
+<p>Block count indica el nombre total de blocs que te cada partició. Block size indica la mida de cada bloc que està assignada. I blocks per group idica el nombre de blocs per cada gruo assignats. </p>
+<h2 id="particions-ntfs">Particions NTFS</h2>
+<p>Per continuar amb les particions NTFS el que hem de fer es crear una segona partició, si voleu en el mateix disc. En el meu cas aquesta segona partició s'anomena sdb2 i el que farem per convertir-la a NTFS és executar la següent comanda: </p>
+<pre><code>mkfs.ntfs -Q /dev/sdb2
+</code></pre>
+<p><img alt="alt text" src="../custom2/p5.png" width="70%" /></p>
+<p>Després d'això el que farem es verificar que tot s'hagi creat amb el format correcte amb la comanda:</p>
+<pre><code>lsblk -f
+</code></pre>
+<p><img alt="alt text" src="../custom2/p6.png" width="70%" /></p>
+<h2 id="carpeta-a-la-particio-temporal">Carpeta a la partició temporal</h2>
+<p>Ara crearem una carpeta i un arxiu dins d'aquesta. </p>
+<p><img alt="alt text" src="../custom/p5.png" width="70%" /></p>
+<p>Un cop tenim la carpeta i l'arxiu creat, muntarem la carpeta dintre de /dev/sdb1. Això no serà visible per a l'usuari, pero ens assegura que en el cas de que es trenqui el disco o passi alguna cosa amb aquest, no es perdi tota la informació emmagatzemada. Per a muntar la carpeta a /deb/sdb1 ho farem amb aquesta comanda:</p>
+<pre><code>sudo mount -t ext4 /dev/sdb1 /var/particio1/
+</code></pre>
+<p><img alt="alt text" src="../custom/p6.png" width="70%" /></p>
+<p>Els arxius es guarden a la particio que hem muntat pero els que ja estaven previament no s'esborren. Queden ocults. </p>
+<p><img alt="alt text" src="../custom/p7.png" width="70%" /></p>
+<ul>
+<li>
+<p><strong>ls particio1/</strong>: Llistem el contingut del directori <code>particio1/</code>. Inicialment, només apareix el directori <code>lost+found</code>, que es crea automàticament en particions formatades amb ext4.</p>
+</li>
+<li>
+<p><strong>touch particio1/adeu</strong>: Creem un fitxer buit anomenat <code>bye</code> dins de la carpeta muntada <code>particio1/</code>.</p>
+</li>
+<li>
+<p><strong>umount /dev/sdb1</strong>: Desmuntem la partició <code>/dev/sdb1</code>, fent que el contingut de la partició deixi d'estar accessible.</p>
+</li>
+<li>
+<p><strong>ls particio1/</strong>: Tornem a llistar el contingut de la carpeta. Ara no apareix el fitxer <code>adeu</code>, ja que aquest estava dins de la partició muntada i aquesta ja no està accessible.</p>
+</li>
+<li>
+<p><strong>ls partition1/ després de desmuntar</strong>: Aquí es mostren només els fitxers que pertanyen al directori local, fora del sistema de fitxers muntat. Quan es desmunta, el contingut de la partició queda separat del directori. Això demostra com el muntatge i desmuntatge funcionen per accedir al contingut de particions.</p>
+</li>
+</ul>
+<p><img alt="alt text" src="../custom/p8.png" width="70%" /></p>
+<p>Per comprovar que la partició existeix utilitzem la comanda:</p>
+<pre><code>df -T
+</code></pre>
+<p>Aquesta comanda mostra una llista de totes les particions muntades juntament amb el tipus de sistema de fitxers de cadascuna. I com podem veure, aquí segueix present.
+Però despres de reiniciar la màquina, si tornem a utilitzar la mateixa comanda, podem veure com l a partició sdb1 ja no apareix</p>
+<p><img alt="alt text" src="../custom/p9.png" width="70%" /></p>
+<p>Per a fer un muntatge permanent, és necessari editar el fitxer /etc/fstab, afegint els paràmetres necessaris</p>
+<p><img alt="alt text" src="../custom/p10.png" width="70%" /></p>
+<p>Després de reiniciar el sistema, si hem posat els paràmetres correctament la màquina funcionarà corrrectament. I tornem a fer <code>df -T</code>. Podem observar que sdb1 ja torna a aparèixer, i podem fer un ls de particio1.</p>
+<p><img alt="alt text" src="../custom/p11.png" width="70%" /></p>
+<h2 id="compartir-fitxers-en-xarxa">Compartir fitxers en xarxa</h2>
+<p>Per a compartir fitxers en xarxa utilitzarem una eina anomenada samba.</p>
+<p>Samba és una eina que permet compartir fitxers i impressores entre ordinadors amb Linux i Windows. Per configurar Samba, instal·la el paquet, edita el fitxer <code>/etc/samba/smb.conf</code> i defineix els recursos a compartir i els permisos d'accés.</p>
+<p>El primer que farem és instal·lar samba</p>
+<p><img alt="alt text" src="../custom/p12.png" width="70%" /></p>
+<p>Un cop hem instal·lat samba, donem els permisos 777 a la carpeta particio1, és a dir que tothom pot fer el que vulgui amb ella.</p>
+<p><img alt="alt text" src="../custom/p14.png" width="70%" /></p>
+<p>I després d'això, ja podem editar l'arxiu smb.conf</p>
+<pre><code>sudo nano /etc/samba/smb.conf
+</code></pre>
+<p><img alt="alt text" src="../custom/p15.png" width="70%" /></p>
+<p>Ara reiniciem el servei de samba i intentem connectar-nos</p>
+<p><img alt="alt text" src="../custom/p16.png" width="70%" /></p>
+<p>En connectem obrint "Other locations" enlasecció de fitxers, i introduint la nostra ip. (Si esteu en una màquina la IP de la màquina).
+Ens demanarà unes credecials, són les que hem posar anteriorment editant el fitxer de smb.conf i ja podrem accedir a la carpetacompartida.</p>
+<p><img alt="alt text" src="../custom/p16.png" width="70%" /></p>
 
 
 
