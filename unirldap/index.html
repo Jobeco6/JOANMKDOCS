@@ -10,10 +10,8 @@
       
       
       
-        <link rel="prev" href="../procesos/">
+        <link rel="prev" href="../ldap/">
       
-      
-        <link rel="next" href="../sisfitpart/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +19,7 @@
     
     
       
-        <title>Permisos en linux - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Integrar un client amb LDAP - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#permisos-en-linux" class="md-skip">
+        <a href="#integrar-un-client-amb-ldap" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Permisos en linux
+              Integrar un client amb LDAP
             
           </span>
         </div>
@@ -239,12 +237,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../usuaris/" class="md-tabs__link">
           
   
@@ -259,10 +255,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../ldap/" class="md-tabs__link">
           
   
@@ -513,19 +511,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -538,7 +534,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Sprint 2
@@ -609,29 +605,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Permisos en linux
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../permisos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -640,47 +616,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modificar-permisos" class="md-nav__link">
-    Modificar permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#taula-permisos" class="md-nav__link">
-    Taula permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sticky-bit" class="md-nav__link">
-    Sticky bit
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -777,17 +712,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
@@ -800,7 +737,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Sprint 3
@@ -831,9 +768,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../unirldap/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Integrar un client amb LDAP
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -842,6 +799,88 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#requisits-previs" class="md-nav__link">
+    Requisits previs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installacio-dels-paquets-essencials" class="md-nav__link">
+    Instal·lació dels paquets essencials
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-del-client-ldap" class="md-nav__link">
+    Configuració del client LDAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-addicional" class="md-nav__link">
+    Configuració addicional
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuració addicional">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actualitzacio-del-fitxer-nsswitchconf" class="md-nav__link">
+    Actualització del fitxer nsswitch.conf
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-de-la-sessio" class="md-nav__link">
+    Configuració de la sessió
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-de-la-pantalla-dinici-greeter" class="md-nav__link">
+    Configuració de la pantalla d'inici (greeter)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificacio-de-la-configuracio-ldap" class="md-nav__link">
+    Verificació de la Configuració LDAP
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -869,97 +908,84 @@
                   
 
 
-<h1 id="permisos-en-linux">Permisos en linux</h1>
-<p>Els permisos en Linux controlen qui pot llegir, executar o escriure fitxers o directoris:</p>
-<ul>
-<li><strong>r</strong>: Permet llegir</li>
-<li><strong>w</strong>: Permet escriure</li>
-<li><strong>x</strong>: Permet executar</li>
-</ul>
-<p>Aquí tenim una imatge de exemple per a comprovar com funciona</p>
-<p><img alt="alt text" src="../custom/chmod.png" /></p>
-<p>Podem veure que hi han 10 caràcters per als permisos, cada 3 caràcters és per a un usuari diferent:</p>
-<p>Els tres primers caràcters (obviant la d, que vol dir que és un directori) són per a el propietari del fitxer. Com podem comprovar té tots els permisos (rwx)</p>
-<p>Els altres tres son per al grup associat al fitxer. Com podem comprovar pot llegir i executar (-xr)</p>
-<p>I els tres últims son per a els altres usuaris. Només por executar (-x)</p>
-<h2 id="modificar-permisos"><strong>Modificar permisos</strong></h2>
-<p>Amb la comanda <code>chmod</code> podem modificar els permisos dels fitxers i directoris. Aquí hi ha alguns exemples de comandes <code>chmod</code>:</p>
-<ul>
-<li><code>chmod 755 fitxer</code>: Assigna permisos de lectura, escriptura i execució per al propietari, i permisos de lectura i execució per al grup i altres usuaris.</li>
-<li><code>chmod 644 fitxer</code>: Assigna permisos de lectura i escriptura per al propietari, i només permisos de lectura per al grup i altres usuaris.</li>
-<li><code>chmod +x fitxer</code>: Afegeix el permís d'execució per a tots els usuaris.</li>
-<li><code>chmod -r fitxer</code>: Treu el permís de lectura per a tots els usuaris.</li>
-<li><code>chmod u+w fitxer</code>: Afegeix el permís d'escriptura només per al propietari.</li>
-<li><code>chmod g-r fitxer</code>: Treu el permís de lectura només per al grup.</li>
-<li><code>chmod o+x fitxer</code>: Afegeix el permís d'execució només per als altres usuaris.</li>
-</ul>
-<p>Aquestes comandes ens permeten controlar qui pot accedir i modificar els nostres fitxers i directoris.</p>
-<h2 id="taula-permisos"><strong>Taula permisos</strong></h2>
-<table>
-<thead>
-<tr>
-<th>Número</th>
-<th>Permisos</th>
-<th>Descripció</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>---</td>
-<td>Sense permisos</td>
-</tr>
-<tr>
-<td>1</td>
-<td>--x</td>
-<td>Només executar</td>
-</tr>
-<tr>
-<td>2</td>
-<td>-w-</td>
-<td>Només escriure</td>
-</tr>
-<tr>
-<td>3</td>
-<td>-wx</td>
-<td>Escriure i executar</td>
-</tr>
-<tr>
-<td>4</td>
-<td>r--</td>
-<td>Només llegir</td>
-</tr>
-<tr>
-<td>5</td>
-<td>r-x</td>
-<td>Llegir i executar</td>
-</tr>
-<tr>
-<td>6</td>
-<td>rw-</td>
-<td>Llegir i escriure</td>
-</tr>
-<tr>
-<td>7</td>
-<td>rwx</td>
-<td>Llegir, escriure i executar</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sticky-bit"><strong>Sticky bit</strong></h2>
-<p>El <strong>sticky bit</strong> és un permís especial que es pot assignar a un directori. Quan el sticky bit està activat en un directori, només el propietari del fitxer, el propietari del directori o l'usuari root poden esborrar o canviar el nom dels fitxers dins d'aquest directori. Això és útil en directoris compartits on molts usuaris poden crear fitxers, però no es vol que puguin esborrar o modificar els fitxers d'altres usuaris.</p>
-<p>Per activar el sticky bit en un directori, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>+t</code>. Aquí hi ha un exemple:</p>
-<ul>
-<li><code>chmod +t directori</code>: Activa el sticky bit en el directori especificat.</li>
-</ul>
-<p>Per desactivar el sticky bit, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>-t</code>:</p>
-<ul>
-<li><code>chmod -t directori</code>: Desactiva el sticky bit en el directori especificat.</li>
-</ul>
-<p>Quan el sticky bit està activat, els permisos del directori es mostren amb una <code>t</code> al final dels permisos per als altres usuaris. Per exemple:</p>
-<ul>
-<li><code>drwxrwxrwt</code>: Indica que el directori té el sticky bit activat.</li>
-</ul>
+<h1 id="integrar-un-client-amb-ldap">Integrar un client amb LDAP</h1>
+<p>Aquest document descriu els passos per afegir un client a un domini LDAP de manera senzilla i eficient.</p>
+<h2 id="requisits-previs">Requisits previs</h2>
+<p>Abans d'iniciar el procés d'integració, és recomanable actualitzar el sistema per assegurar que disposeu dels paquets més recents:</p>
+<pre><code class="language-bash">sudo apt update
+</code></pre>
+<h2 id="installacio-dels-paquets-essencials">Instal·lació dels paquets essencials</h2>
+<p>Instal·leu els paquets que permetran la comunicació amb LDAP:</p>
+<pre><code class="language-bash">sudo apt install libnss-ldap libpam-ldap nscd
+</code></pre>
+<p>Durant la instal·lació, se us sol·licitarà que introduïu els paràmetres de configuració per connectar-vos al servidor LDAP. En cas que la finestra de configuració es tanqui per error, podeu tornar-la a obrir amb:</p>
+<pre><code class="language-bash">sudo dpkg-reconfigure ldap-auth-config
+</code></pre>
+<h2 id="configuracio-del-client-ldap">Configuració del client LDAP</h2>
+<ol>
+<li>Introduïu l'adreça del servidor amb el format correcte:
+    <code>ldap://adreça-del-servidor</code>
+    Eviteu utilitzar el format ldapi:///.</li>
+</ol>
+<p><img alt="alt text" src="../custom2/ldapp1.png" width="70%" /></p>
+<ol>
+<li>Especifica el DN (nom distingit) base per la recerca, habitualment derivat del domini de l'organització.</li>
+</ol>
+<p><img alt="alt text" src="../custom2/ldapp2.png" width="70%" /></p>
+<ol>
+<li>Seleccioneu la versió 3 del protocol LDAP per assegurar compatibilitat.</li>
+</ol>
+<p><img alt="alt text" src="../custom2/ldapp3.png" width="70%" /></p>
+<ol>
+<li>Perquè l'usuari root local mantingui privilegis d'administració sobre LDAP, confirmeu aquesta opció durant la configuració.</li>
+</ol>
+<p><img alt="alt text" src="../custom2/ldapp4.png" width="70%" /></p>
+<ol>
+<li>Activeu l'autenticació segura per a LDAP. Utilitzeu un compte d'administració (com "admin") amb la contrasenya corresponent. També podeu configurar un usuari sense permisos administratius per a la base de dades, encara que es recomana utilitzar un nom descriptiu.</li>
+</ol>
+<p><img alt="alt text" src="../custom2/ldapp5.png" width="70%" /></p>
+<p><img alt="alt text" src="../custom2/ldapp6.png" width="70%" /></p>
+<p><img alt="alt text" src="../custom2/ldapp7.png" width="70%" /></p>
+<ol>
+<li>Mantingueu el mètode de hash de les contrasenyes com a MD5 per emmagatzemar-les de forma segura.</li>
+</ol>
+<p><img alt="alt text" src="../custom2/ldapp8.png" width="70%" /></p>
+<h2 id="configuracio-addicional">Configuració addicional</h2>
+<h3 id="actualitzacio-del-fitxer-nsswitchconf">Actualització del fitxer nsswitch.conf</h3>
+<p>Afegiu les línies pertinents al fitxer de configuració nsswitch.conf per redirigir l'autenticació cap a LDAP en lloc de la informació local.</p>
+<p><img alt="alt text" src="../custom2/ldapp9.png" width="70%" /></p>
+<h3 id="configuracio-de-la-sessio">Configuració de la sessió</h3>
+<p>Per a la creació automàtica dels directoris personals dels usuaris LDAP, editeu el fitxer <code>/etc/pam.d/common-session</code>:</p>
+<pre><code class="language-bash">sudo nano /etc/pam.d/common-session
+</code></pre>
+<p>Al final del fitxer, afegiu:</p>
+<pre><code>session optional pam_mkhomedir.so skel=/etc/skel umask=022
+</code></pre>
+<p>Això assegura que cada usuari que inicia sessió rebi el seu directori personal amb la configuració correcta.</p>
+<p><img alt="alt text" src="../custom2/ldapp10.png" width="70%" /></p>
+<h3 id="configuracio-de-la-pantalla-dinici-greeter">Configuració de la pantalla d'inici (greeter)</h3>
+<p>Per permetre l'inici de sessió manual, afegiu la següent línia al fitxer de configuració del greeter:</p>
+<pre><code>greeter-show-manual-login=true
+</code></pre>
+<p><img alt="alt text" src="../custom2/ldapp11.png" width="70%" /></p>
+<h2 id="verificacio-de-la-configuracio-ldap">Verificació de la Configuració LDAP</h2>
+<ol>
+<li>
+<p>Per comprovar que el sistema consulta correctament el servidor LDAP, executeu:</p>
+<p><code>bash
+sudo getent passwd</code></p>
+<p>Si un usuari definit en LDAP (com per exemple, alu1) apareix, la configuració és correcta.</p>
+</li>
+<li>
+<p>Reiniar el sistema per aplicar tots els canvis.</p>
+</li>
+<li>
+<p>Inicieu sessió amb un usuari LDAP (per exemple, alu1) i verifiqueu l'autenticació amb:</p>
+<p><code>bash
+whoami</code></p>
+</li>
+</ol>
+<p>Si es mostra el nom d'usuari, la integració amb LDAP s'ha completat amb èxit.</p>
 
 
 

@@ -10,10 +10,6 @@
       
       
       
-        <link rel="prev" href="../procesos/">
-      
-      
-        <link rel="next" href="../sisfitpart/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +17,7 @@
     
     
       
-        <title>Permisos en linux - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Gestió del Servei LDAP - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#permisos-en-linux" class="md-skip">
+        <a href="#gestio-del-servei-ldap" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Permisos en linux
+              Gestió del Servei LDAP
             
           </span>
         </div>
@@ -239,12 +235,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../usuaris/" class="md-tabs__link">
           
   
@@ -513,19 +507,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -538,7 +530,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Sprint 2
@@ -609,29 +601,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Permisos en linux
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../permisos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -640,47 +612,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modificar-permisos" class="md-nav__link">
-    Modificar permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#taula-permisos" class="md-nav__link">
-    Taula permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sticky-bit" class="md-nav__link">
-    Sticky bit
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -869,97 +800,110 @@
                   
 
 
-<h1 id="permisos-en-linux">Permisos en linux</h1>
-<p>Els permisos en Linux controlen qui pot llegir, executar o escriure fitxers o directoris:</p>
-<ul>
-<li><strong>r</strong>: Permet llegir</li>
-<li><strong>w</strong>: Permet escriure</li>
-<li><strong>x</strong>: Permet executar</li>
-</ul>
-<p>Aquí tenim una imatge de exemple per a comprovar com funciona</p>
-<p><img alt="alt text" src="../custom/chmod.png" /></p>
-<p>Podem veure que hi han 10 caràcters per als permisos, cada 3 caràcters és per a un usuari diferent:</p>
-<p>Els tres primers caràcters (obviant la d, que vol dir que és un directori) són per a el propietari del fitxer. Com podem comprovar té tots els permisos (rwx)</p>
-<p>Els altres tres son per al grup associat al fitxer. Com podem comprovar pot llegir i executar (-xr)</p>
-<p>I els tres últims son per a els altres usuaris. Només por executar (-x)</p>
-<h2 id="modificar-permisos"><strong>Modificar permisos</strong></h2>
-<p>Amb la comanda <code>chmod</code> podem modificar els permisos dels fitxers i directoris. Aquí hi ha alguns exemples de comandes <code>chmod</code>:</p>
-<ul>
-<li><code>chmod 755 fitxer</code>: Assigna permisos de lectura, escriptura i execució per al propietari, i permisos de lectura i execució per al grup i altres usuaris.</li>
-<li><code>chmod 644 fitxer</code>: Assigna permisos de lectura i escriptura per al propietari, i només permisos de lectura per al grup i altres usuaris.</li>
-<li><code>chmod +x fitxer</code>: Afegeix el permís d'execució per a tots els usuaris.</li>
-<li><code>chmod -r fitxer</code>: Treu el permís de lectura per a tots els usuaris.</li>
-<li><code>chmod u+w fitxer</code>: Afegeix el permís d'escriptura només per al propietari.</li>
-<li><code>chmod g-r fitxer</code>: Treu el permís de lectura només per al grup.</li>
-<li><code>chmod o+x fitxer</code>: Afegeix el permís d'execució només per als altres usuaris.</li>
-</ul>
-<p>Aquestes comandes ens permeten controlar qui pot accedir i modificar els nostres fitxers i directoris.</p>
-<h2 id="taula-permisos"><strong>Taula permisos</strong></h2>
-<table>
-<thead>
-<tr>
-<th>Número</th>
-<th>Permisos</th>
-<th>Descripció</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>---</td>
-<td>Sense permisos</td>
-</tr>
-<tr>
-<td>1</td>
-<td>--x</td>
-<td>Només executar</td>
-</tr>
-<tr>
-<td>2</td>
-<td>-w-</td>
-<td>Només escriure</td>
-</tr>
-<tr>
-<td>3</td>
-<td>-wx</td>
-<td>Escriure i executar</td>
-</tr>
-<tr>
-<td>4</td>
-<td>r--</td>
-<td>Només llegir</td>
-</tr>
-<tr>
-<td>5</td>
-<td>r-x</td>
-<td>Llegir i executar</td>
-</tr>
-<tr>
-<td>6</td>
-<td>rw-</td>
-<td>Llegir i escriure</td>
-</tr>
-<tr>
-<td>7</td>
-<td>rwx</td>
-<td>Llegir, escriure i executar</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sticky-bit"><strong>Sticky bit</strong></h2>
-<p>El <strong>sticky bit</strong> és un permís especial que es pot assignar a un directori. Quan el sticky bit està activat en un directori, només el propietari del fitxer, el propietari del directori o l'usuari root poden esborrar o canviar el nom dels fitxers dins d'aquest directori. Això és útil en directoris compartits on molts usuaris poden crear fitxers, però no es vol que puguin esborrar o modificar els fitxers d'altres usuaris.</p>
-<p>Per activar el sticky bit en un directori, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>+t</code>. Aquí hi ha un exemple:</p>
-<ul>
-<li><code>chmod +t directori</code>: Activa el sticky bit en el directori especificat.</li>
-</ul>
-<p>Per desactivar el sticky bit, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>-t</code>:</p>
-<ul>
-<li><code>chmod -t directori</code>: Desactiva el sticky bit en el directori especificat.</li>
-</ul>
-<p>Quan el sticky bit està activat, els permisos del directori es mostren amb una <code>t</code> al final dels permisos per als altres usuaris. Per exemple:</p>
-<ul>
-<li><code>drwxrwxrwt</code>: Indica que el directori té el sticky bit activat.</li>
-</ul>
+<h1 id="gestio-del-servei-ldap">Gestió del Servei LDAP</h1>
+<p>Aquest document serveix com a guia ràpida per gestionar el servidor LDAP amb operacions bàsiques com afegir, eliminar i modificar entrades.</p>
+<hr />
+<h2 id="afegir-entrades-amb-ldapadd">Afegir Entrades amb ldapadd</h2>
+<p>Per afegir una nova entrada a la base de dades LDAP s’utilitza la comanda <code>ldapadd</code> amb un fitxer LDIF que defineix l'entrada. Per exemple, crea el fitxer <strong>user.ldif</strong> amb el següent contingut:</p>
+<pre><code>dn: uid=eren,ou=usuaris,dc=paquirrinisalive,dc=cat
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+uid: eren
+cn: Eren
+sn: 123
+givenName: Eren123
+uidNumber: 1004
+gidNumber: 1009
+homeDirectory: /home/eren
+loginShell: /bin/bash
+userPassword: {SSHA}123
+mail: eren@paquirrinisalive.cat
+</code></pre>
+<p>I executa la comanda:</p>
+<pre><code>ldapadd -x -D &quot;cn=admin,dc=paquirrinisalive,dc=cat&quot; -W -f user.ldif
+</code></pre>
+<hr />
+<h2 id="consultes-amb-ldapsearch">Consultes amb ldapsearch</h2>
+<p>El comandament <code>ldapsearch</code> és essencial per cercar informació i filtrar resultats. A continuació, alguns exemples:</p>
+<h3 id="filtrar-resultats">Filtrar Resultats</h3>
+<p>Per cercar un usuari específic amb un uid determinat:</p>
+<pre><code>ldapsearch -xLLL -b  &quot;(uid=alu1)&quot;
+</code></pre>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldappp1.png" width="70%" /></p>
+<h3 id="especificar-atributs">Especificar Atributs</h3>
+<p>Per retornar només certs atributs, com <code>cn</code> i <code>homeDirectory</code>:</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldappp2.png" width="70%" /></p>
+<h3 id="cerca-amb-filtres-complexos">Cerca amb Filtres Complexos</h3>
+<p>Per llistar totes les Unitats Organitzatives (UOs):</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldappp3.png" width="70%" /></p>
+<h2 id="eliminacio-dentrades-i-atributs">Eliminació d'Entrades i Atributs</h2>
+<p>Hi ha dues maneres d’eliminar informació:</p>
+<h3 id="esborrar-atributs-amb-ldapmodify">Esborrar Atributs amb ldapmodify</h3>
+<p>Crea un fitxer LDIF per eliminar, per exemple, l'atribut <code>mail</code>:</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldappp4.png" width="70%" /></p>
+<pre><code>dn: uid=alu1,ou=usuaris,dc=paquirrinisalive,dc=cat
+changetype: modify
+delete: mail
+</code></pre>
+<p>Aplica els canvis amb:</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldappp5.png" width="70%" /></p>
+<h3 id="esborrar-una-entrada-amb-ldapdelete">Esborrar una Entrada amb ldapdelete</h3>
+<p>Per eliminar directament una entrada:</p>
+<pre><code>ldapdelete -x -D &quot;cn=admin,dc=paquirrinisalive,dc=cat&quot; -W &quot;uid=alu1,ou=usuaris,dc=paquirrinisalive,dc=cat&quot;
+</code></pre>
+<h3 id="esborrar-una-entrada-amb-ldapmodify">Esborrar una Entrada amb ldapmodify</h3>
+<p>Alternativament, pots esborrar una entrada mitjançant un fitxer LDIF com aquest (ex. <strong>esborrar_alu1.ldif</strong>):</p>
+<pre><code>dn: uid=alu1,ou=usuaris,dc=paquirrinisalive,dc=cat
+changetype: delete
+</code></pre>
+<p>I executar:</p>
+<pre><code>ldapmodify -x -D &quot;cn=admin,dc=paquirrinisalive,dc=cat&quot; -W -f esborrar_alu1.ldif
+</code></pre>
+<hr />
+<h2 id="modificacio-dentrades-amb-ldapmodify">Modificació d'Entrades amb ldapmodify</h2>
+<p>La comanda <code>ldapmodify</code> permet actualitzar atributs o reestructurar l’esquema d’entrades.</p>
+<h3 id="modificar-un-unic-camp">Modificar un Únic Camp</h3>
+<p>Per actualitzar el número de telèfon i el correu, crea el fitxer <strong>modificar_alu1.ldif</strong>:</p>
+<pre><code>dn: uid=alu1,ou=usuaris,dc=paquirrinisalive,dc=cat
+changetype: modify
+replace: telephoneNumber
+telephoneNumber: 123456789
+-
+replace: mail
+mail: alu1@paquirrinisalive.cat
+</code></pre>
+<p>Executa la comanda:</p>
+<pre><code>ldapmodify -x -D &quot;cn=admin,dc=paquirrinisalive,dc=cat&quot; -W -f modificar_alu1.ldif
+</code></pre>
+<p>Verifica-ho amb:</p>
+<pre><code>ldapsearch -xLLL -b &quot;uid=alu1,ou=usuaris,dc=paquirrinisalive,dc=cat&quot; telephoneNumber mail
+</code></pre>
+<h3 id="modificar-diversos-atributs-i-moure-una-entrada">Modificar Diversos Atributs i Moure una Entrada</h3>
+<p>Per actualitzar diversos camps i transferir l’usuari a una nova UO (per exemple, <strong>asix</strong>), crea el fitxer <strong>modificar_alu1_complex.ldif</strong>:</p>
+<pre><code>dn: uid=alu1,ou=usuaris,dc=paquirrinisalive,dc=cat
+changetype: modify
+replace: telephoneNumber
+telephoneNumber: 611047095
+-
+add: mail
+mail: alu1@paquirrinisalive,dc=cat
+-
+add: l
+l: Barcelona
+-
+changetype: modrdn
+newrdn: uid=alu1
+deleteoldrdn: 1
+newsuperior: ou=asix,dc=paquirrinisalive,dc=cat
+</code></pre>
+<p>Execució:</p>
+<pre><code>ldapmodify -x -D &quot;cn=admin,dc=paquirrinisalive,dc=cat&quot; -W -f modificar_alu1_complex.ldif
+</code></pre>
+<p>Verifica la nova ubicació:</p>
+<pre><code>ldapsearch -xLLL -b &quot;uid=alu1,ou=asix,dc=paquirrinisalive,dc=cat&quot;
+</code></pre>
+<hr />
 
 
 

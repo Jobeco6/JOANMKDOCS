@@ -10,10 +10,10 @@
       
       
       
-        <link rel="prev" href="../procesos/">
+        <link rel="prev" href="../copies/">
       
       
-        <link rel="next" href="../sisfitpart/">
+        <link rel="next" href="../unirldap/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Permisos en linux - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Instal·lació LDAP - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#permisos-en-linux" class="md-skip">
+        <a href="#installacio-ldap" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Permisos en linux
+              Instal·lació LDAP
             
           </span>
         </div>
@@ -239,12 +239,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../usuaris/" class="md-tabs__link">
           
   
@@ -259,11 +257,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../ldap/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Sprint 3
@@ -513,19 +513,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -538,7 +536,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Sprint 2
@@ -609,29 +607,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Permisos en linux
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../permisos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -640,47 +618,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modificar-permisos" class="md-nav__link">
-    Modificar permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#taula-permisos" class="md-nav__link">
-    Taula permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sticky-bit" class="md-nav__link">
-    Sticky bit
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -777,17 +714,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
         
           <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
@@ -800,7 +739,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             Sprint 3
@@ -811,9 +750,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../ldap/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Instal·lació LDAP
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -822,6 +781,129 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-ldap" class="md-nav__link">
+    Què és LDAP?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-un-domini" class="md-nav__link">
+    Què és un domini?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usos-de-ldap" class="md-nav__link">
+    Usos de LDAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#que-son-els-fitxers-ldif" class="md-nav__link">
+    Què són els fitxers LDIF?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacio-dun-domini-amb-ldap" class="md-nav__link">
+    Creació d'un domini amb LDAP
+  </a>
+  
+    <nav class="md-nav" aria-label="Creació d'un domini amb LDAP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#establir-una-ip-estatica" class="md-nav__link">
+    Establir una IP estàtica
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#canviar-el-hostname" class="md-nav__link">
+    Canviar el hostname
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installacions-necessaries-ldap" class="md-nav__link">
+    Instal·lacions necessàries LDAP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificacio-inicial-ldap" class="md-nav__link">
+    Verificació inicial LDAP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuracio-ldap" class="md-nav__link">
+    Configuració LDAP
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fitxers-ldif" class="md-nav__link">
+    Fitxers LDIF
+  </a>
+  
+    <nav class="md-nav" aria-label="Fitxers LDIF">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacio-del-fitxer-usuldif" class="md-nav__link">
+    Creació del fitxer usu.ldif
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#carregar-fitxers-ldif-al-servidor-ldap" class="md-nav__link">
+    Carregar fitxers .ldif al servidor LDAP
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -869,97 +951,132 @@
                   
 
 
-<h1 id="permisos-en-linux">Permisos en linux</h1>
-<p>Els permisos en Linux controlen qui pot llegir, executar o escriure fitxers o directoris:</p>
+<h1 id="installacio-ldap">Instal·lació LDAP</h1>
+<h2 id="que-es-ldap">Què és LDAP?</h2>
+<p>LDAP (Lightweight Directory Access Protocol) és un protocol que permet accedir i gestionar serveis d'informació de directori distribuïts en una xarxa IP. És útil per organitzar i administrar informació com usuaris, grups, dispositius i altres recursos dins d'una xarxa.</p>
+<h2 id="que-es-un-domini">Què és un domini?</h2>
+<p>Un domini és una unitat administrativa dins d'una xarxa que organitza i gestiona recursos com usuaris, grups, dispositius i altres objectes. Els dominis permeten aplicar polítiques de seguretat, gestionar permisos i autenticar usuaris de manera centralitzada. En un entorn LDAP, un domini es defineix per un nom de domini complet (FQDN) i pot contenir múltiples unitats organitzatives (OUs) que ajuden a estructurar i segmentar els recursos de manera lògica.</p>
+<h2 id="usos-de-ldap">Usos de LDAP</h2>
+<p>LDAP s'utilitza en diverses situacions, incloent:</p>
 <ul>
-<li><strong>r</strong>: Permet llegir</li>
-<li><strong>w</strong>: Permet escriure</li>
-<li><strong>x</strong>: Permet executar</li>
+<li><strong>Autenticació d'usuaris</strong>: LDAP permet centralitzar l'autenticació dels usuaris en una xarxa, facilitant la gestió de credencials.</li>
+<li><strong>Gestió de recursos</strong>: Permet administrar dispositius, aplicacions i altres recursos de manera centralitzada.</li>
+<li><strong>Directori d'empresa</strong>: Utilitzat per mantenir un directori d'empleats, incloent informació de contacte i posicions.</li>
+<li><strong>Control d'accés</strong>: Facilita la implementació de polítiques de seguretat i control d'accés a diferents recursos de la xarxa.</li>
+<li><strong>Integració amb altres serveis</strong>: LDAP es pot integrar amb altres serveis com correu electrònic, VPNs, i aplicacions empresarials per proporcionar una gestió unificada.</li>
 </ul>
-<p>Aquí tenim una imatge de exemple per a comprovar com funciona</p>
-<p><img alt="alt text" src="../custom/chmod.png" /></p>
-<p>Podem veure que hi han 10 caràcters per als permisos, cada 3 caràcters és per a un usuari diferent:</p>
-<p>Els tres primers caràcters (obviant la d, que vol dir que és un directori) són per a el propietari del fitxer. Com podem comprovar té tots els permisos (rwx)</p>
-<p>Els altres tres son per al grup associat al fitxer. Com podem comprovar pot llegir i executar (-xr)</p>
-<p>I els tres últims son per a els altres usuaris. Només por executar (-x)</p>
-<h2 id="modificar-permisos"><strong>Modificar permisos</strong></h2>
-<p>Amb la comanda <code>chmod</code> podem modificar els permisos dels fitxers i directoris. Aquí hi ha alguns exemples de comandes <code>chmod</code>:</p>
+<p>En aquest cas, utilitzarem <code>slapcat</code>, que serveix per exportar el contingut d'una base de dades LDAP a un fitxer en format LDIF (LDAP Data Interchange Format). Aquest format és un estàndard per representar dades LDAP en text pla, el que facilita la seva lectura i manipulació.</p>
+<h2 id="que-son-els-fitxers-ldif">Què són els fitxers LDIF?</h2>
+<p>Els fitxers LDIF (LDAP Data Interchange Format) són fitxers de text pla utilitzats per representar dades d'un directori LDAP. Aquests fitxers permeten exportar i importar informació de manera estàndard, facilitant la transferència de dades entre diferents sistemes LDAP. Un fitxer LDIF conté una sèrie d'entrades, cadascuna de les quals representa un objecte del directori, com ara usuaris, grups o dispositius. Cada entrada inclou una sèrie d'atributs i els seus valors corresponents.</p>
+<h2 id="creacio-dun-domini-amb-ldap">Creació d'un domini amb LDAP</h2>
+<h3 id="establir-una-ip-estatica">Establir una IP estàtica</h3>
+<p>El primer que farem és establir una IP estàtica al sistema per evitar possibles errors en el futur. Si la IP canvia, hauríem de modificar els fitxers de configuració. En aquest cas, la meva IP és 10.0.2.14, però podeu utilitzar qualsevol altra que us convingui.</p>
+<p><img alt="Configuració IP estàtica" src="../custom2/ldap1.png" width="70%" /></p>
+<h3 id="canviar-el-hostname">Canviar el hostname</h3>
+<p>Per canviar el nom de la màquina, podem utilitzar la següent comanda:</p>
+<pre><code class="language-bash">sudo nano /etc/hostname
+</code></pre>
+<p><img alt="Canvi del hostname" src="../custom2/ldap2.png" width="70%" /></p>
+<p>Afegirem el nom i la IP al fitxer <code>/etc/hosts</code> perquè el sistema pugui reconèixer el nom del servidor i el domini:</p>
+<pre><code class="language-bash">sudo nano /etc/hosts
+</code></pre>
+<p><img alt="Configuració del fitxer hosts" src="../custom2/ldap3.png" width="70%" /></p>
+<h3 id="installacions-necessaries-ldap">Instal·lacions necessàries LDAP</h3>
+<p>Ara que tenim la configuració inicial finalitzada, començarem amb la instal·lació de paquets essencials per treballar amb LDAP:</p>
+<pre><code class="language-bash">sudo apt install slapd ldap-utils
+</code></pre>
+<p><img alt="Instal·lació de paquets LDAP" src="../custom2/ldap4.png" width="70%" /></p>
+<h3 id="verificacio-inicial-ldap">Verificació inicial LDAP</h3>
+<p>Després d'executar la comanda <code>slapcat</code>, es pot veure que el directori no està completament buit. Conté una configuració mínima inicial amb el domini <code>dc=nodomain</code>. Això indica que el servidor LDAP està funcionant, però encara no s'ha configurat adequadament.</p>
+<p><img alt="Verificació inicial amb slapcat" src="../custom2/ldap5.png" width="70%" /></p>
+<h2 id="configuracio-ldap">Configuració LDAP</h2>
+<p>Per configurar el servidor LDAP, utilitzarem:</p>
+<pre><code class="language-bash">sudo dpkg-reconfigure slapd
+</code></pre>
+<p>Seguirem els següents passos:</p>
+<ol>
+<li>
+<p>Seleccionem "No" per continuar amb la configuració
+<img alt="Inici de la configuració" src="../custom2/ldap7.png" width="70%" /></p>
+</li>
+<li>
+<p>Assignem un nom al domini
+<img alt="Configuració del domini" src="../custom2/ldap6.png" width="70%" /></p>
+</li>
+<li>
+<p>Introduïm el nom de l'organització
+<img alt="Nom de l'organització" src="../custom2/ldap8.png" width="70%" /></p>
+</li>
+<li>
+<p>Assignem una contrasenya d'administrador
+<img alt="Configuració de contrasenya" src="../custom2/ldap9.png" width="70%" /></p>
+</li>
+<li>
+<p>Eliminem la base de dades anterior
+<img alt="Eliminació de la BD" src="../custom2/ldap10.png" width="70%" /></p>
+</li>
+<li>
+<p>Movem la base de dades antiga
+<img alt="Moure la BD antiga" src="../custom2/ldap11.png" width="70%" /></p>
+</li>
+</ol>
+<p>Un cop finalitzada la configuració, podem verificar que tot s'ha creat correctament:</p>
+<p><img alt="Verificació de la configuració" src="../custom2/ldap12.png" width="70%" /></p>
+<p>Comprovem la configuració amb <code>slapcat</code>:</p>
+<p><img alt="Comprovació amb slapcat" src="../custom2/ldap13.png" width="70%" /></p>
+<h2 id="fitxers-ldif">Fitxers LDIF</h2>
+<p>Els fitxers LDIF són essencials per definir i importar dades en un servidor LDAP. Per exemple, per crear una Unitat Organitzativa (OU) anomenada "users", creem un fitxer <code>uo.ldif</code> amb els següents elements:</p>
 <ul>
-<li><code>chmod 755 fitxer</code>: Assigna permisos de lectura, escriptura i execució per al propietari, i permisos de lectura i execució per al grup i altres usuaris.</li>
-<li><code>chmod 644 fitxer</code>: Assigna permisos de lectura i escriptura per al propietari, i només permisos de lectura per al grup i altres usuaris.</li>
-<li><code>chmod +x fitxer</code>: Afegeix el permís d'execució per a tots els usuaris.</li>
-<li><code>chmod -r fitxer</code>: Treu el permís de lectura per a tots els usuaris.</li>
-<li><code>chmod u+w fitxer</code>: Afegeix el permís d'escriptura només per al propietari.</li>
-<li><code>chmod g-r fitxer</code>: Treu el permís de lectura només per al grup.</li>
-<li><code>chmod o+x fitxer</code>: Afegeix el permís d'execució només per als altres usuaris.</li>
+<li><strong>dn (Distinguished Name)</strong>: Especifica la ubicació única de l'objecte</li>
+<li><strong>objectClass</strong>: Defineix el tipus d'objecte</li>
+<li><strong>ou</strong>: Indica el nom de la unitat organitzativa</li>
 </ul>
-<p>Aquestes comandes ens permeten controlar qui pot accedir i modificar els nostres fitxers i directoris.</p>
-<h2 id="taula-permisos"><strong>Taula permisos</strong></h2>
-<table>
-<thead>
-<tr>
-<th>Número</th>
-<th>Permisos</th>
-<th>Descripció</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>---</td>
-<td>Sense permisos</td>
-</tr>
-<tr>
-<td>1</td>
-<td>--x</td>
-<td>Només executar</td>
-</tr>
-<tr>
-<td>2</td>
-<td>-w-</td>
-<td>Només escriure</td>
-</tr>
-<tr>
-<td>3</td>
-<td>-wx</td>
-<td>Escriure i executar</td>
-</tr>
-<tr>
-<td>4</td>
-<td>r--</td>
-<td>Només llegir</td>
-</tr>
-<tr>
-<td>5</td>
-<td>r-x</td>
-<td>Llegir i executar</td>
-</tr>
-<tr>
-<td>6</td>
-<td>rw-</td>
-<td>Llegir i escriure</td>
-</tr>
-<tr>
-<td>7</td>
-<td>rwx</td>
-<td>Llegir, escriure i executar</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sticky-bit"><strong>Sticky bit</strong></h2>
-<p>El <strong>sticky bit</strong> és un permís especial que es pot assignar a un directori. Quan el sticky bit està activat en un directori, només el propietari del fitxer, el propietari del directori o l'usuari root poden esborrar o canviar el nom dels fitxers dins d'aquest directori. Això és útil en directoris compartits on molts usuaris poden crear fitxers, però no es vol que puguin esborrar o modificar els fitxers d'altres usuaris.</p>
-<p>Per activar el sticky bit en un directori, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>+t</code>. Aquí hi ha un exemple:</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldap14.png" width="70%" /></p>
+<p>Creació del fitxer grup.ldif</p>
+<p>El fitxer grup.ldif defineix un grup dins del nostre servidor LDAP. Aquest grup serà associat a una Unitat Organitzativa (OU) ja existent (en aquest cas, users). Aquí detallem els paràmetres utilitzats:</p>
+<p>alt text</p>
+<p>dn (Distinguished Name): Identifica de manera única el grup (cn=alumnes,ou=users,dc=vitaliy,dc=com).
+objectClass: Defineix el tipus d'objecte (en aquest cas, posixGroup, per a grups POSIX).
+cn: Nom del grup (alumnes).
+gidNumber: Identificador únic del grup (1001).
+memberUid: Usuaris membres del grup (en aquest cas, alu1).
+Aquest fitxer es pot importar al servidor LDAP per crear i gestionar grups d’usuaris, facilitant l’organització i la configuració d’accés.</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldap15.png" width="70%" /></p>
+<h3 id="creacio-del-fitxer-usuldif">Creació del fitxer usu.ldif</h3>
+<p>El fitxer <code>usu.ldif</code> s'utilitza per crear i configurar usuaris dins del servidor LDAP. Aquest fitxer conté els paràmetres bàsics necessaris per definir un compte d'usuari, però es pot ampliar amb informació addicional com correu electrònic, número de telèfon, etc.</p>
 <ul>
-<li><code>chmod +t directori</code>: Activa el sticky bit en el directori especificat.</li>
+<li><strong>dn (Distinguished Name)</strong>: Identifica de manera única l'usuari dins del directori</li>
+<li><strong>objectClass</strong>: Defineix les classes associades a l'usuari:</li>
+<li>inetOrgPerson i organizationalPerson per a dades personals i organitzatives</li>
+<li>posixAccount i shadowAccount per a compatibilitat amb sistemes POSIX i gestió de contrasenyes</li>
+<li><strong>userPassword</strong>: Contrasenya de l'usuari (en format encriptat és recomanable)</li>
+<li><strong>cn</strong>: Nom complet de l'usuari (exemple: Primer)</li>
+<li><strong>sn</strong>: Cognom de l'usuari (exemple: Alumne1)</li>
+<li><strong>gidNumber</strong>: Identificador del grup al qual pertany l'usuari (exemple: 1001)</li>
+<li><strong>uidNumber</strong>: Identificador únic de l'usuari (exemple: 1001)</li>
+<li><strong>homeDirectory</strong>: Directori personal de l'usuari (exemple: /home/alu1)</li>
+<li><strong>loginShell</strong>: Shell predeterminada de l'usuari (exemple: /bin/bash)</li>
+<li><strong>shadowExpire, shadowLastChange, shadowMax, shadowMin, shadowWarning</strong>: Paràmetres relacionats amb la caducitat i gestió de contrasenyes
+Aquest fitxer es pot utilitzar per afegir l'usuari al directori LDAP mitjançant comandes com ldapadd. A més, es poden incloure atributs addicionals, com correu electrònic o telèfon, segons les necessitats de l'organització.</li>
 </ul>
-<p>Per desactivar el sticky bit, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>-t</code>:</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldap16.png" width="70%" /></p>
+<h3 id="carregar-fitxers-ldif-al-servidor-ldap">Carregar fitxers .ldif al servidor LDAP</h3>
+<p>Un cop creats els fitxers .ldif, el següent pas és carregar-los al servidor LDAP. Aquest procés permet crear els objectes definits (unitats organitzatives, grups i usuaris) dins del directori.</p>
+<p>Per fer-ho, utilitzarem la comanda <code>ldapadd</code>:</p>
+<pre><code class="language-bash">ldapadd -c -x -D &quot;cn=admin,dc=paquirrinisalive,dc=cat&quot; -W -f &lt;nom_fitxer&gt;
+</code></pre>
+<p>Els paràmetres utilitzats són:</p>
 <ul>
-<li><code>chmod -t directori</code>: Desactiva el sticky bit en el directori especificat.</li>
+<li><code>-c</code>: Continua processant malgrat errors</li>
+<li><code>-x</code>: Utilitza autenticació simple</li>
+<li><code>-D</code>: Especifica el DN de l'administrador</li>
+<li><code>-W</code>: Sol·licita la contrasenya interactivament</li>
+<li><code>-f</code>: Indica el fitxer .ldif a carregar</li>
 </ul>
-<p>Quan el sticky bit està activat, els permisos del directori es mostren amb una <code>t</code> al final dels permisos per als altres usuaris. Per exemple:</p>
-<ul>
-<li><code>drwxrwxrwt</code>: Indica que el directori té el sticky bit activat.</li>
-</ul>
+<p>Aquesta comanda s'ha d'executar per cada fitxer .ldif que vulguem carregar (uo.ldif, grup.ldif, usu.ldif).</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldap17.png" width="70%" /></p>
+<p>Per acabar, fem una comprovació final</p>
+<p><img alt="Exemple de fitxer LDIF" src="../custom2/ldap18.png" width="70%" /></p>
 
 
 
