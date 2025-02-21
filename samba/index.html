@@ -982,12 +982,12 @@
 <li><strong>Instal·lació de Samba:</strong>
     <code>sudo apt-get install samba</code></li>
 </ol>
-<p><img alt="Explicació visual" src="../custom%203/samba/1.png" width="50%" /></p>
+<p><img alt="Explicació visual" src="../custom%203/samba/1.png" width="70%" /></p>
 <p>Més endavant s’explicarà com crear el <strong>directori</strong> a compartir, assignant-li els permisos pertinents. Cal que el propietari i el grup siguin <strong>nobody:nogroup</strong>; en aquest exemple, s’usa el permís <strong>777</strong> per simplificar el procés.</p>
-<p><img alt="Explicació visual" src="../custom%203/samba/2.png" width="50%" /></p>
+<p><img alt="Explicació visual" src="../custom%203/samba/2.png" width="70%" /></p>
 <h2 id="edicio-del-fitxer-de-configuracio-smbconf"><strong>Edició del Fitxer de Configuració smb.conf</strong></h2>
 <p>Per configurar la compartició del <strong>directori</strong> creat, s’ha de modificar el fitxer de configuració de Samba, ubicat a <strong><code>/etc/samba/smb.conf</code></strong>, afegint-hi una configuració bàsica.</p>
-<p><img alt="Explicació visual" src="../custom%203/samba/3.png" width="50%" /></p>
+<p><img alt="Explicació visual" src="../custom%203/samba/3.png" width="70%" /></p>
 <p>En aquest exemple, es defineix el <strong>directori</strong> compartit juntament amb opcions com <strong>guest ok</strong> i <strong>browsable</strong> (que pot ser "yes" o "no" segons els requisits). També es configuren els paràmetres <strong>directory mask</strong> i <strong>create mask</strong> per gestionar els permisos dels <strong>directoris</strong> i <strong>fitxers</strong>.</p>
 <p>Pel que fa als permisos específics:</p>
 <ul>
@@ -996,20 +996,20 @@
 <li>L’usuari <strong>joan</strong> no rebrà permisos ni accés al recurs compartit.</li>
 </ul>
 <p>Un cop fet això, reiniciem i comprovem que s'hagi fet correctament.</p>
-<p><img alt="Explicació visual" src="../custom%203/samba/4.png" width="50%" /></p>
+<p><img alt="Explicació visual" src="../custom%203/samba/4.png" width="70%" /></p>
 <p>Ara, creem els usuaris i els assignem als grups amb la següent comanda:</p>
 <pre><code>useradd -M -s /sbin/nbologin &quot;nom&quot;
 </code></pre>
 <p>i després amb un tail comprovem que els usuaris s'hagin creat correctament.</p>
-<p><img alt="Explicació visual" src="../custom%203/samba/5.png" width="50%" /></p>
+<p><img alt="Explicació visual" src="../custom%203/samba/5.png" width="70%" /></p>
 <p>Ara, per a que la gentu pugui accedir-hi remotament al servidor samba, el que s'ha de fer és assignar una contrasenya a l'usuari amb la següent comanda:</p>
 <pre><code>smbpasswd -a &quot;nom&quot;
 </code></pre>
-<p><img alt="Explicació visual" src="../custom%203/samba/6.png" width="50%" /></p>
+<p><img alt="Explicació visual" src="../custom%203/samba/6.png" width="70%" /></p>
 <p>Un cop ja hem assignat contrasenya a cada usuari ja podrem passar al client.</p>
 <h2 id="configuracio-client-samba">Configuració client samba</h2>
 <p>El primer que hem de fer a la màquina del client per a poder connectar-nos a samba, és instal·lar smbclient a la nostra màquina de client.</p>
-<p><img alt="Explicació visual" src="../custom%203/samba/7.png" width="50%" /></p>
+<p><img alt="Explicació visual" src="../custom%203/samba/7.png" width="70%" /></p>
 
 
 
