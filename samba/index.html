@@ -13,13 +13,15 @@
         <link rel="prev" href="../gestioldap/">
       
       
+        <link rel="next" href="../ldapgui/">
+      
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.0">
     
     
       
-        <title>Samba: Solució de Software de Codi Obert per SMB/CIFS - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Samba - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -76,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#samba-solucio-de-software-de-codi-obert-per-smbcifs" class="md-skip">
+        <a href="#samba" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -110,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Samba: Solució de Software de Codi Obert per SMB/CIFS
+              Samba
             
           </span>
         </div>
@@ -823,7 +825,7 @@
           
   
   <span class="md-ellipsis">
-    Samba: Solució de Software de Codi Obert per SMB/CIFS
+    Samba
   </span>
   
 
@@ -834,7 +836,7 @@
         
   
   <span class="md-ellipsis">
-    Samba: Solució de Software de Codi Obert per SMB/CIFS
+    Samba
   </span>
   
 
@@ -912,6 +914,26 @@
 
               
             
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ldapgui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LDAP amb entorn gràfic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -934,7 +956,7 @@
                   
 
 
-<h1 id="samba-solucio-de-software-de-codi-obert-per-smbcifs"><strong>Samba: Solució de Software de Codi Obert per SMB/CIFS</strong></h1>
+<h1 id="samba"><strong>Samba</strong></h1>
 <h2 id="presentacio-de-samba"><strong>Presentació de Samba</strong></h2>
 <p><strong>Samba</strong> és un programari gratuït i de codi obert que implementa el protocol <strong>SMB/CIFS</strong>, facilitant la transmissió de dades i la gestió d’<strong>impressores</strong> en xarxes híbrides. El seu objectiu principal és oferir una integració sense friccions entre els entorns de <strong>Windows</strong> i de <strong>Unix/Linux</strong>.</p>
 <h3 id="caracteristiques-i-avantatges-de-samba"><strong>Característiques i Avantatges de Samba</strong></h3>
@@ -1010,6 +1032,16 @@
 <h2 id="configuracio-client-samba">Configuració client samba</h2>
 <p>El primer que hem de fer a la màquina del client per a poder connectar-nos a samba, és instal·lar smbclient a la nostra màquina de client.</p>
 <p><img alt="Explicació visual" src="../custom%203/samba/7.png" width="70%" /></p>
+<p>Una vegada hem instal·lat el smb client, el necessari es obrir l'apartat de Altres ubicacions al cercador de fitxers, afegim la nostra ip la cual té el servidor samba i el nom del directori que hem compartit.</p>
+<p><img alt="Explicació visual" src="../custom%203/samba/8.png" width="70%" /></p>
+<p>Podem entrar com a un usuari anònim, pero no podrem visualisar fitxers ni eliminar-ne</p>
+<p><img alt="Explicació visual" src="../custom%203/samba/9.png" width="70%" /></p>
+<p>Com es pot veure, si intentem eliminar algun arxiu dintre del directori com a usuari anònim, ens dira que no podem per falta de permisos.</p>
+<p><img alt="Explicació visual" src="../custom%203/samba/10.png" width="70%" /></p>
+<p>Ara, ens connectarem com a l'usuari jesus, aquest ususari té tots els permisos, i borrarem la seva carpeta que anteriorment no ens havia deixat borrar.</p>
+<p><img alt="Explicació visual" src="../custom%203/samba/11.png" width="70%" /></p>
+<p>Com podem veure, la carpeta jesus ja no hi és.</p>
+<p><img alt="Explicació visual" src="../custom%203/samba/12.png" width="70%" /></p>
 
 
 
