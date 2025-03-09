@@ -10,10 +10,10 @@
       
       
       
-        <link rel="prev" href="../procesos/">
+        <link rel="prev" href="../ldapgui/">
       
       
-        <link rel="next" href="../sisfitpart/">
+        <link rel="next" href="../raids5/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Permisos en linux - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Configuració de RAID 1 - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#permisos-en-linux" class="md-skip">
+        <a href="#configuracio-de-raid-1" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Permisos en linux
+              Configuració de RAID 1
             
           </span>
         </div>
@@ -239,12 +239,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../usuaris/" class="md-tabs__link">
           
   
@@ -277,11 +275,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../raids1/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Sprint 4
@@ -531,19 +531,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -556,7 +554,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Sprint 2
@@ -627,29 +625,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Permisos en linux
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../permisos/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -658,47 +636,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#modificar-permisos" class="md-nav__link">
-    Modificar permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#taula-permisos" class="md-nav__link">
-    Taula permisos
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sticky-bit" class="md-nav__link">
-    Sticky bit
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -936,17 +873,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -959,7 +898,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Sprint 4
@@ -970,9 +909,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../raids1/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuració de RAID 1
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -981,6 +940,204 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#installacio-de-leina-de-gestio-de-raid" class="md-nav__link">
+    Instal·lació de l'eina de gestió de RAID
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#preparacio-dels-discs" class="md-nav__link">
+    Preparació dels Discs
+  </a>
+  
+    <nav class="md-nav" aria-label="Preparació dels Discs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#esborrat-de-la-informacio-dels-discs" class="md-nav__link">
+    Esborrat de la informació dels discs
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#particionament-dels-discs" class="md-nav__link">
+    Particionament dels discs
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#elaboracio-del-disc" class="md-nav__link">
+    Elaboració del disc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creacio-del-directori-de-muntatge" class="md-nav__link">
+    Creació del Directori de Muntatge
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formacio-del-dispositiu-raid-1" class="md-nav__link">
+    Formació del Dispositiu RAID 1
+  </a>
+  
+    <nav class="md-nav" aria-label="Formació del Dispositiu RAID 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacio-del-raid" class="md-nav__link">
+    Creació del RAID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoritzacio-de-lestat-del-raid" class="md-nav__link">
+    Monitorització de l'Estat del RAID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-i-actualitzacio-de-mdadm" class="md-nav__link">
+    Configuració i Actualització de mdadm
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#revisio-del-fitxer-de-configuracio" class="md-nav__link">
+    Revisió del Fitxer de Configuració
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#formatacio-i-muntatge-del-raid" class="md-nav__link">
+    Formatació i Muntatge del RAID
+  </a>
+  
+    <nav class="md-nav" aria-label="Formatació i Muntatge del RAID">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#formateig" class="md-nav__link">
+    Formateig
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuracio-per-a-muntatge-automatic" class="md-nav__link">
+    Configuració per a Muntatge Automàtic
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#muntatge-i-actualitzacio-del-sistema" class="md-nav__link">
+    Muntatge i Actualització del Sistema
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#verificacio-del-funcionament" class="md-nav__link">
+    Verificació del Funcionament
+  </a>
+  
+    <nav class="md-nav" aria-label="Verificació del Funcionament">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creacio-dun-fitxer-de-comprovacio" class="md-nav__link">
+    Creació d'un Fitxer de Comprovació
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#desconnexio-dun-disc" class="md-nav__link">
+    Desconnexió d'un Disc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#comprovacio-del-estat-del-raid" class="md-nav__link">
+    Comprovació del Estat del RAID
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#verificacio-de-la-integritat-de-les-dades" class="md-nav__link">
+    Verificació de la Integritat de les Dades
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reinsercio-del-disc" class="md-nav__link">
+    Reinserció del Disc
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#netejar-la-configuracio" class="md-nav__link">
+    Netejar la Configuració
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1028,96 +1185,94 @@
                   
 
 
-<h1 id="permisos-en-linux">Permisos en linux</h1>
-<p>Els permisos en Linux controlen qui pot llegir, executar o escriure fitxers o directoris:</p>
+<h1 id="configuracio-de-raid-1">Configuració de RAID 1</h1>
+<p>Aquest document detalla el mètode per establir un RAID 1 usant dos discs d'1GB. RAID 1 copia la informació entre els discs, proporcionant redundància i seguretat en el cas que algun disc falli.</p>
+<h2 id="installacio-de-leina-de-gestio-de-raid">Instal·lació de l'eina de gestió de RAID</h2>
+<p>Instal·leu mdadm, que s'utilitzarà per crear i controlar el RAID:</p>
+<pre><code class="language-bash">sudo apt install mdadm 
+</code></pre>
+<p>Mdadm és l'eina per gestionar dispositius RAID per programari (MD) a Linux. Aquesta eina permet:
+- Crear arrays RAID amb diversos nivells (com RAID 0, RAID 1, RAID 5, etc.).
+- Monitoritzar l'estat del RAID, detectant errors i fallades de discs.
+- Reconfigurar i reconstruir l'array en cas de fallida d'un disc.
+- Facilitar la gestió i manteniment d'arranjaments RAID, millorant la redundància i seguretat de les dades.</p>
+<p>Per a instal·lar-ho:
+<img alt="alt text" src="../custom%203/raids1/1.png" width="80%" /></p>
+<h2 id="preparacio-dels-discs">Preparació dels Discs</h2>
+<h3 id="esborrat-de-la-informacio-dels-discs">Esborrat de la informació dels discs</h3>
+<p>Comproveu que els discs estan buits o que és acceptable perdre les dades emmagatzemades.</p>
+<h3 id="particionament-dels-discs">Particionament dels discs</h3>
+<p>Creeu particions indicant l'opció "t" per definir el tipus i "fd" per especificar que la partició és per Linux RAID autodetectable.</p>
+<p><img alt="alt text" src="../custom%203/raids1/2.png" width="80%" /></p>
+<h2 id="elaboracio-del-disc">Elaboració del disc</h2>
+<h2 id="creacio-del-directori-de-muntatge">Creació del Directori de Muntatge</h2>
+<p>Creeu un directori, per exemple, /mnt/raid1, i ajusteu els permisos (temporellement 777) per facilitar les proves.
+<img alt="alt text" src="../custom%203/raids1/4.png" width="80%" /></p>
+<h2 id="formacio-del-dispositiu-raid-1">Formació del Dispositiu RAID 1</h2>
+<h3 id="creacio-del-raid">Creació del RAID</h3>
+<p>Utilitzeu mdadm per unir les particions dels dos discs (per exemple, /dev/sda1 i /dev/sdb1) en un dispositiu RAID 1:</p>
+<pre><code class="language-bash">sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sda1 /dev/sdb1
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/6.png" width="80%" /></p>
+<h3 id="monitoritzacio-de-lestat-del-raid">Monitorització de l'Estat del RAID</h3>
+<p>Comproveu la creació del RAID amb:</p>
+<pre><code class="language-bash">cat /proc/mdstat
+# o
+mdadm --detail /dev/md0
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/7.png" width="80%" /></p>
+<h3 id="configuracio-i-actualitzacio-de-mdadm">Configuració i Actualització de mdadm</h3>
+<p>Guardeu la configuració actual del RAID al fitxer de configuració:</p>
+<pre><code class="language-bash">mdadm --detail --scan &gt; /etc/mdadm/mdadm.conf
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/8.png" width="80%" /></p>
+<h3 id="revisio-del-fitxer-de-configuracio">Revisió del Fitxer de Configuració</h3>
+<p>Editeu el fitxer <code>/etc/mdadm/mdadm.conf</code> (per exemple, amb nano) per verificar i ajustar la configuració:</p>
+<pre><code class="language-bash">nano /etc/mdadm/mdadm.conf
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/9.png" width="80%" /></p>
+<h2 id="formatacio-i-muntatge-del-raid">Formatació i Muntatge del RAID</h2>
+<h3 id="formateig">Formateig</h3>
+<p>Un cop el RAID (<code>/dev/md0</code>) s'hagi creat i sincronitzat, formateu-lo amb un sistema d'arxius com ext4:</p>
+<pre><code class="language-bash">mkfs.ext4 /dev/md0
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/10.png" width="80%" /></p>
+<h3 id="configuracio-per-a-muntatge-automatic">Configuració per a Muntatge Automàtic</h3>
+<p>Afegiu una línia a <code>/etc/fstab</code> per muntar el RAID automàticament durant l'arrencada. Exemple:</p>
+<pre><code>/dev/md0    /mnt/raid1    ext4    defaults    0    0
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/16.png" width="80%" /></p>
+<h3 id="muntatge-i-actualitzacio-del-sistema">Muntatge i Actualització del Sistema</h3>
+<p>Executeu les ordres per muntar el RAID i actualitzar la configuració d'arrencada:</p>
+<pre><code class="language-bash">mount /mnt/raid1
+update-initramfs -u -k all
+</code></pre>
+<h2 id="verificacio-del-funcionament">Verificació del Funcionament</h2>
+<h3 id="creacio-dun-fitxer-de-comprovacio">Creació d'un Fitxer de Comprovació</h3>
+<p>Creeu un fitxer anomenat <code>prova.txt</code> al directori muntat per assegurar el correcte funcionament.
+<img alt="alt text" src="../custom%203/raids1/13.png" width="80%" /></p>
+<h3 id="desconnexio-dun-disc">Desconnexió d'un Disc</h3>
+<p>Simuleu una fallada desconnectant un disc del RAID:</p>
+<pre><code class="language-bash">mdadm /dev/md0 -f /dev/sdb1
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/11.png" width="80%" /></p>
+<h3 id="comprovacio-del-estat-del-raid">Comprovació del Estat del RAID</h3>
+<p>Verifiqueu que el disc <code>/dev/sdb1</code> apareix en estat "faulty":</p>
+<pre><code class="language-bash">mdadm --detail /dev/md0
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/12.png" width="80%" /></p>
+<h3 id="verificacio-de-la-integritat-de-les-dades">Verificació de la Integritat de les Dades</h3>
+<p>Confirmeu que les dades romanen accessibles, per exemple, fent un <code>ls</code> al directori muntat (/mnt/raid1).</p>
+<p><img alt="alt text" src="../custom%203/raids1/13.png" width="80%" /></p>
+<h3 id="reinsercio-del-disc">Reinserció del Disc</h3>
+<p>Torneu a afegir el disc per iniciar el procés de reconstrucció:</p>
+<pre><code class="language-bash">mdadm /dev/md0 -a /dev/sdb1
+</code></pre>
+<p><img alt="alt text" src="../custom%203/raids1/14.png" width="80%" /></p>
+<h3 id="netejar-la-configuracio">Netejar la Configuració</h3>
 <ul>
-<li><strong>r</strong>: Permet llegir</li>
-<li><strong>w</strong>: Permet escriure</li>
-<li><strong>x</strong>: Permet executar</li>
-</ul>
-<p>Aquí tenim una imatge de exemple per a comprovar com funciona</p>
-<p><img alt="alt text" src="../custom/chmod.png" /></p>
-<p>Podem veure que hi han 10 caràcters per als permisos, cada 3 caràcters és per a un usuari diferent:</p>
-<p>Els tres primers caràcters (obviant la d, que vol dir que és un directori) són per a el propietari del fitxer. Com podem comprovar té tots els permisos (rwx)</p>
-<p>Els altres tres son per al grup associat al fitxer. Com podem comprovar pot llegir i executar (-xr)</p>
-<p>I els tres últims son per a els altres usuaris. Només por executar (-x)</p>
-<h2 id="modificar-permisos"><strong>Modificar permisos</strong></h2>
-<p>Amb la comanda <code>chmod</code> podem modificar els permisos dels fitxers i directoris. Aquí hi ha alguns exemples de comandes <code>chmod</code>:</p>
-<ul>
-<li><code>chmod 755 fitxer</code>: Assigna permisos de lectura, escriptura i execució per al propietari, i permisos de lectura i execució per al grup i altres usuaris.</li>
-<li><code>chmod 644 fitxer</code>: Assigna permisos de lectura i escriptura per al propietari, i només permisos de lectura per al grup i altres usuaris.</li>
-<li><code>chmod +x fitxer</code>: Afegeix el permís d'execució per a tots els usuaris.</li>
-<li><code>chmod -r fitxer</code>: Treu el permís de lectura per a tots els usuaris.</li>
-<li><code>chmod u+w fitxer</code>: Afegeix el permís d'escriptura només per al propietari.</li>
-<li><code>chmod g-r fitxer</code>: Treu el permís de lectura només per al grup.</li>
-<li><code>chmod o+x fitxer</code>: Afegeix el permís d'execució només per als altres usuaris.</li>
-</ul>
-<p>Aquestes comandes ens permeten controlar qui pot accedir i modificar els nostres fitxers i directoris.</p>
-<h2 id="taula-permisos"><strong>Taula permisos</strong></h2>
-<table>
-<thead>
-<tr>
-<th>Número</th>
-<th>Permisos</th>
-<th>Descripció</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>0</td>
-<td>---</td>
-<td>Sense permisos</td>
-</tr>
-<tr>
-<td>1</td>
-<td>--x</td>
-<td>Només executar</td>
-</tr>
-<tr>
-<td>2</td>
-<td>-w-</td>
-<td>Només escriure</td>
-</tr>
-<tr>
-<td>3</td>
-<td>-wx</td>
-<td>Escriure i executar</td>
-</tr>
-<tr>
-<td>4</td>
-<td>r--</td>
-<td>Només llegir</td>
-</tr>
-<tr>
-<td>5</td>
-<td>r-x</td>
-<td>Llegir i executar</td>
-</tr>
-<tr>
-<td>6</td>
-<td>rw-</td>
-<td>Llegir i escriure</td>
-</tr>
-<tr>
-<td>7</td>
-<td>rwx</td>
-<td>Llegir, escriure i executar</td>
-</tr>
-</tbody>
-</table>
-<h2 id="sticky-bit"><strong>Sticky bit</strong></h2>
-<p>El <strong>sticky bit</strong> és un permís especial que es pot assignar a un directori. Quan el sticky bit està activat en un directori, només el propietari del fitxer, el propietari del directori o l'usuari root poden esborrar o canviar el nom dels fitxers dins d'aquest directori. Això és útil en directoris compartits on molts usuaris poden crear fitxers, però no es vol que puguin esborrar o modificar els fitxers d'altres usuaris.</p>
-<p>Per activar el sticky bit en un directori, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>+t</code>. Aquí hi ha un exemple:</p>
-<ul>
-<li><code>chmod +t directori</code>: Activa el sticky bit en el directori especificat.</li>
-</ul>
-<p>Per desactivar el sticky bit, es pot utilitzar la comanda <code>chmod</code> amb el valor <code>-t</code>:</p>
-<ul>
-<li><code>chmod -t directori</code>: Desactiva el sticky bit en el directori especificat.</li>
-</ul>
-<p>Quan el sticky bit està activat, els permisos del directori es mostren amb una <code>t</code> al final dels permisos per als altres usuaris. Per exemple:</p>
-<ul>
-<li><code>drwxrwxrwt</code>: Indica que el directori té el sticky bit activat.</li>
+<li>Esborreu el contingut del fitxer <code>/etc/mdadm/mdadm.conf</code> (o deixeu-lo sense contingut).</li>
+<li>Elimineu o comenteu la línia afegida al fitxer <code>/etc/fstab</code>.</li>
 </ul>
 
 
