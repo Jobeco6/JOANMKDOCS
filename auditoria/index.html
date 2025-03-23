@@ -10,10 +10,8 @@
       
       
       
-        <link rel="prev" href="../auto/">
+        <link rel="prev" href="../seract/">
       
-      
-        <link rel="next" href="../ldap/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +19,7 @@
     
     
       
-        <title>Còpies de Seguretat - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Auditoria de Seguretat per a Linux amb Lynis 🔒 - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#copies-de-seguretat" class="md-skip">
+        <a href="#auditoria-de-seguretat-per-a-linux-amb-lynis" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Còpies de Seguretat
+              Auditoria de Seguretat per a Linux amb Lynis 🔒
             
           </span>
         </div>
@@ -239,12 +237,10 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
+      <li class="md-tabs__item">
         <a href="../usuaris/" class="md-tabs__link">
           
   
@@ -295,10 +291,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../monitoratge/" class="md-tabs__link">
           
   
@@ -549,19 +547,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
@@ -574,7 +570,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Sprint 2
@@ -725,29 +721,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Còpies de Seguretat
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../copies/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -756,87 +732,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#per-a-que-serveixen-les-copies-de-seguretat" class="md-nav__link">
-    Per a què serveixen les còpies de seguretat?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#tipus-de-copies-de-seguretat" class="md-nav__link">
-    Tipus de còpies de seguretat
-  </a>
-  
-    <nav class="md-nav" aria-label="Tipus de còpies de seguretat">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#quan-utilitzar-cada-tipus-de-copia-de-seguretat" class="md-nav__link">
-    Quan utilitzar cada tipus de còpia de seguretat?
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#eines-per-a-realitzar-copies-de-seguretat" class="md-nav__link">
-    Eines per a realitzar còpies de seguretat
-  </a>
-  
-    <nav class="md-nav" aria-label="Eines per a realitzar còpies de seguretat">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#cp" class="md-nav__link">
-    cp
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dd" class="md-nav__link">
-    dd
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#rsync" class="md-nav__link">
-    rsync
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1075,17 +970,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
@@ -1098,7 +995,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Sprint 5
@@ -1149,9 +1046,18 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../auditoria/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1160,6 +1066,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -1187,61 +1094,66 @@
                   
 
 
-<h1 id="copies-de-seguretat">Còpies de Seguretat</h1>
-<p>Les còpies de seguretat són duplicats de dades importants que es guarden en un lloc segur per tal de protegir-les contra pèrdues o danys. Aquestes còpies es poden utilitzar per restaurar les dades originals en cas de fallada del sistema, errors humans, atacs de programari maliciós o altres incidents que puguin comprometre la integritat de la informació.</p>
-<h2 id="per-a-que-serveixen-les-copies-de-seguretat">Per a què serveixen les còpies de seguretat?</h2>
-<ol>
-<li><strong>Protecció contra pèrdues de dades</strong>: Les còpies de seguretat asseguren que les dades es poden recuperar en cas de pèrdua accidental o intencionada.</li>
-<li><strong>Recuperació de sistemes</strong>: Permeten restaurar sistemes complets després d'una fallada crítica.</li>
-<li><strong>Seguretat contra atacs</strong>: En cas d'atacs de ransomware o altres tipus de programari maliciós, les còpies de seguretat permeten recuperar les dades sense haver de pagar rescats.</li>
-<li><strong>Compliment normatiu</strong>: Moltes regulacions exigeixen la creació de còpies de seguretat per garantir la protecció de dades sensibles.</li>
-<li><strong>Tranquil·litat</strong>: Saber que les dades estan segures proporciona una major tranquil·litat i confiança en la gestió de la informació.</li>
-</ol>
-<p>És important realitzar còpies de seguretat de manera regular i emmagatzemar-les en ubicacions segures, preferiblement en diferents formats i llocs físics o en el núvol.</p>
-<h2 id="tipus-de-copies-de-seguretat">Tipus de còpies de seguretat</h2>
-<ol>
-<li>
-<p><strong>Còpia completa</strong>: Una còpia completa és una còpia de seguretat de totes les dades seleccionades. Aquest tipus de còpia és el més senzill de restaurar, ja que conté totes les dades en un sol conjunt. S'utilitza quan es necessita una còpia íntegra de totes les dades, però requereix més espai d'emmagatzematge i temps per completar-se.</p>
-</li>
-<li>
-<p><strong>Còpia diferencial</strong>: Una còpia diferencial inclou només les dades que han canviat des de l'última còpia completa. Això significa que cada còpia diferencial creix amb el temps fins que es realitza una nova còpia completa. És útil per reduir el temps i l'espai necessaris per a les còpies de seguretat, però la restauració pot ser més complexa, ja que requereix la còpia completa més la còpia diferencial més recent.</p>
-</li>
-<li>
-<p><strong>Còpia incremental</strong>: Una còpia incremental només inclou les dades que han canviat des de l'última còpia de seguretat, ja sigui completa o incremental. Aquest tipus de còpia és molt eficient en termes d'espai i temps, però la restauració pot ser més complicada, ja que requereix la còpia completa inicial i totes les còpies incrementals fins al punt de restauració desitjat.</p>
-</li>
-</ol>
-<h3 id="quan-utilitzar-cada-tipus-de-copia-de-seguretat">Quan utilitzar cada tipus de còpia de seguretat?</h3>
+<h1 id="auditoria-de-seguretat-per-a-linux-amb-lynis">Auditoria de Seguretat per a Linux amb Lynis 🔒</h1>
+<h1 id="auditoria-de-seguretat-per-a-linux-amb-lynis_1">Auditoria de Seguretat per a Linux amb Lynis 🔒</h1>
+<p>Amb Lynis, pots dur a terme una auditoria completa del teu sistema Linux o Unix, ideal tant per a entorns personals com per a servidors. Aquesta eina analitza cada racó del sistema per identificar vulnerabilitats i proporcionar recomanacions per a una protecció reforçada.</p>
+<hr />
+<h2 id="caracteristiques-principals">Característiques Principals</h2>
 <ul>
 <li>
-<p><strong>Còpia completa</strong>: Utilitzeu-la quan necessiteu una còpia íntegra de totes les dades i disposeu de suficient espai d'emmagatzematge i temps per completar-la. És ideal per a còpies de seguretat inicials o periòdiques (per exemple, setmanals o mensuals).</p>
+<p><strong>Compatibilitat Extensa</strong><br />
+    Funciona de manera òptima amb múltiples distribucions com Ubuntu, Debian, Arch Linux, Fedora, OpenSUSE, entre altres.</p>
 </li>
 <li>
-<p><strong>Còpia diferencial</strong>: És adequada quan voleu equilibrar el temps i l'espai d'emmagatzematge amb la facilitat de restauració. Pot ser útil per a còpies de seguretat diàries després d'una còpia completa setmanal.</p>
+<p><strong>Anàlisi Integral</strong><br />
+    Realitza una revisió detallada de configuracions, serveis, processos i aplicacions per assegurar una defensa robusta.</p>
 </li>
 <li>
-<p><strong>Còpia incremental</strong>: Utilitzeu-la quan necessiteu còpies de seguretat freqüents (per exemple, diàries o fins i tot horàries) i voleu minimitzar l'espai d'emmagatzematge i el temps necessari per a cada còpia. És ideal per a entorns on les dades canvien constantment i es necessita una protecció contínua.</p>
+<p><strong>Detecció de Vulnerabilitats</strong><br />
+    Examina àrees clau com ara firewalls, bases de dades, criptografia, xarxes, i boot loaders per identificar riscos potencials.</p>
+</li>
+<li>
+<p><strong>Recomanacions Proactives</strong><br />
+    Ofereix solucions concretes per optimitzar la seguretat, ajudant-te a millorar contínuament el teu sistema.</p>
+</li>
+<li>
+<p><strong>Llicència Oberta</strong><br />
+    Llançat sota la GNU GPL v3, Lynis fomenta la col·laboració i el desenvolupament comunitari.</p>
 </li>
 </ul>
-<h2 id="eines-per-a-realitzar-copies-de-seguretat">Eines per a realitzar còpies de seguretat</h2>
-<h3 id="cp">cp</h3>
-<p><code>cp</code> és una eina de línia de comandes en sistemes Unix i Linux que s'utilitza per copiar fitxers i directoris d'una ubicació a una altra. És una eina senzilla i fàcil d'utilitzar per a còpies de seguretat bàsiques.</p>
-<p><strong>Exemple d'ús:</strong></p>
-<pre><code class="language-sh">cp -r /path/to/source /path/to/destination
+<hr />
+<h2 id="installacio-de-lynis">Instal·lació de Lynis</h2>
+<p>Instal·la Lynis fàcilment amb la següent comanda:</p>
+<pre><code>sudo apt install lynis -y
 </code></pre>
-<p>L'opció <code>-r</code> indica que es copien recursivament tots els fitxers i subdirectoris.</p>
-<h3 id="dd">dd</h3>
-<p><code>dd</code> és una eina de línia de comandes que s'utilitza per copiar i convertir dades a nivell de blocs. És especialment útil per crear imatges de disc o còpies de seguretat de dispositius complets.</p>
-<p><strong>Exemple d'ús:</strong></p>
-<pre><code class="language-sh">dd if=/dev/sdX of=/path/to/backup.img bs=4M
+<h2 id="_1"><img alt="alt text" src="../custom%203/lynis/1.png" /></h2>
+<h2 id="execucio-de-lauditoria">Execució de l'Auditoria</h2>
+<p>Per dur a terme una auditoria completa del sistema, executa:</p>
+<pre><code>sudo lynis audit system
 </code></pre>
-<p>En aquest exemple, <code>if</code> especifica el fitxer d'entrada (el dispositiu de disc) i <code>of</code> especifica el fitxer de sortida (la imatge de còpia de seguretat). L'opció <code>bs</code> defineix la mida del bloc.</p>
-<h3 id="rsync">rsync</h3>
-<p><code>rsync</code> és una eina de còpia de fitxers i directoris que permet la sincronització eficient de dades entre diferents ubicacions. És molt utilitzada per a còpies de seguretat perquè només copia els fitxers que han canviat, estalviant temps i ample de banda.</p>
-<p><strong>Exemple d'ús:</strong></p>
-<pre><code class="language-sh">rsync -avz /path/to/source /path/to/destination
+<p>A mesura que Llanis treballa, et mostrarà un índex interactiu que es va incrementant amb cada recomanació aplicada.</p>
+<p><img alt="alt text" src="../custom%203/lynis/2.png" /></p>
+<p>A baix de tot podem veure l'índex.</p>
+<p><img alt="alt text" src="../custom%203/lynis/3.png" /></p>
+<p>I una mica més a dalt del índex podem veure les recomanacions.</p>
+<p><img alt="alt text" src="../custom%203/lynis/4.png" /></p>
+<p>Amb aquesta comanda corregim alguns paquets restants. </p>
+<pre><code>sudo apt update &amp;&amp; sudo apt install -y apt-listchanges needrestart fail2ban
 </code></pre>
-<p>L'opció <code>-a</code> activa el mode arxiu (preserva permisos, propietaris, etc.), <code>-v</code> activa el mode detallat (mostra el procés) i <code>-z</code> comprimeix les dades durant la transferència.</p>
-<p>Aquestes eines són molt útils per a diferents necessitats de còpies de seguretat i poden ser combinades segons els requisits específics de cada entorn.</p>
+<p><img alt="alt text" src="../custom%203/lynis/6.png" /></p>
+<p>I com podem comprova, l'índex puja de 58 a 60. Anem poc a poc</p>
+<p><img alt="alt text" src="../custom%203/lynis/5.png" /></p>
+<p>Després d'això fem un</p>
+<pre><code>sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+</code></pre>
+<p>Això tardarà una molt, bona estona. </p>
+<p><img alt="alt text" src="../custom%203/lynis/7.png" /></p>
+<p>Després d'una llarga espera, obtenim un 4% més</p>
+<p><img alt="alt text" src="../custom%203/lynis/8.png" /></p>
+<p>Després d'executar vàries comandes (chatgpt ens pot ajudar molt a trobar les comandes qu hem d'executar), arribem al 67%.</p>
+<p><img alt="alt text" src="../custom%203/lynis/10.png" /></p>
 
 
 
