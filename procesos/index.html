@@ -759,6 +759,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#pstree" class="md-nav__link">
+    pstree
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ps-aux" class="md-nav__link">
+    ps aux
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1363,6 +1377,9 @@
 <li>Comanda <code>pkill</code>: Permet matar processos per nom.</li>
 <li>Comanda <code>killall</code>: Mata tots els processos amb un mateix nom.</li>
 </ul>
+<p>Aqui podem veure com es mata el proces firefox mitjançant kill -9</p>
+<p><img alt="alt text" src="../custom4/dual/processos5.png" /></p>
+<p><img alt="alt text" src="../custom4/dual/processos4.png" /></p>
 <h2 id="gestio-de-processos-amb-ctrlc-i-ctrlz"><strong>Gestió de processos amb Ctrl+C i Ctrl+Z</strong></h2>
 <ul>
 <li>Ctrl+C: Finalitza immediatament el procés en primer pla.</li>
@@ -1372,6 +1389,28 @@
 <p>Un procés zombi és un procés que ha finalitzat però encara ocupa una entrada a la taula de processos perquè el seu procés pare no ha recollit el seu codi de sortida.</p>
 <p>Identificar-los: Utilitza ps aux | grep Z per veure els processos zombies.
 Matar-los: Utilitza kill <PID> o kill -9 <PID> per eliminar-los.</p>
+<h2 id="pstree">pstree</h2>
+<p>La comanda pstree mostra una representació gràfica en forma d'arbre de tots els processos en execució, il·lustrant les relacions de pare i fill entre ells. Això facilita la visualització de la jerarquia del sistema, ajudant a identificar com es distribueixen els processos i les seves dependències.</p>
+<p><img alt="alt text" src="../custom4/dual/processos.png" /></p>
+<p>També es pot fer un grep d'aquesta comanda i filtrar-ho.</p>
+<p><img alt="alt text" src="../custom4/dual/processos2.png" /></p>
+<h2 id="ps-aux"><strong>ps aux</strong></h2>
+<p>La comanda <code>ps aux</code> mostra una llista de tots els processos en execució al sistema amb informació detallada, com ara:</p>
+<ul>
+<li><strong>USER:</strong> Nom de l'usuari que ha iniciat el procés.</li>
+<li><strong>PID:</strong> Identificador únic del procés.</li>
+<li><strong>%CPU i %MEM:</strong> Percentatge d'ús de la CPU i de la memòria.</li>
+<li><strong>START:</strong> L'hora o data d'inici del procés.</li>
+<li><strong>TIME:</strong> Temps acumulat d'execució.</li>
+<li><strong>COMMAND:</strong> La comanda o nom del procés.</li>
+</ul>
+<p>Es pot utilitzar per comprovar l'estat dels processos en temps real:</p>
+<pre><code>ps aux
+</code></pre>
+<p><img alt="alt text" src="../custom4/dual/processos3.png" /></p>
+<p>Per filtrar resultats, s'inclou el pipe amb el comanda <code>grep</code>:</p>
+<pre><code>ps aux | grep nom_del_proces
+</code></pre>
 
 
 
