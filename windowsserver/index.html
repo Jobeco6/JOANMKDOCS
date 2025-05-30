@@ -10,10 +10,10 @@
       
       
       
-        <link rel="prev" href="../ldapgui/">
+        <link rel="prev" href="../auditoria/">
       
       
-        <link rel="next" href="../raids5/">
+        <link rel="next" href="../windows10/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Configuració de RAID 1 - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Windows Server - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuracio-de-raid-1" class="md-skip">
+        <a href="#windows-server" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuració de RAID 1
+              Windows Server
             
           </span>
         </div>
@@ -275,13 +275,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../raids1/" class="md-tabs__link">
           
   
   Sprint 4
@@ -313,11 +311,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../windowsserver/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   Sprint 1 Windows
@@ -929,19 +929,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -954,7 +952,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Sprint 4
@@ -965,29 +963,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Configuració de RAID 1
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../raids1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,204 +974,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installacio-de-leina-de-gestio-de-raid" class="md-nav__link">
-    Instal·lació de l'eina de gestió de RAID
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparacio-dels-discs" class="md-nav__link">
-    Preparació dels Discs
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparació dels Discs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#esborrat-de-la-informacio-dels-discs" class="md-nav__link">
-    Esborrat de la informació dels discs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#particionament-dels-discs" class="md-nav__link">
-    Particionament dels discs
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elaboracio-del-disc" class="md-nav__link">
-    Elaboració del disc
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creacio-del-directori-de-muntatge" class="md-nav__link">
-    Creació del Directori de Muntatge
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formacio-del-dispositiu-raid-1" class="md-nav__link">
-    Formació del Dispositiu RAID 1
-  </a>
-  
-    <nav class="md-nav" aria-label="Formació del Dispositiu RAID 1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creacio-del-raid" class="md-nav__link">
-    Creació del RAID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoritzacio-de-lestat-del-raid" class="md-nav__link">
-    Monitorització de l'Estat del RAID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuracio-i-actualitzacio-de-mdadm" class="md-nav__link">
-    Configuració i Actualització de mdadm
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#revisio-del-fitxer-de-configuracio" class="md-nav__link">
-    Revisió del Fitxer de Configuració
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatacio-i-muntatge-del-raid" class="md-nav__link">
-    Formatació i Muntatge del RAID
-  </a>
-  
-    <nav class="md-nav" aria-label="Formatació i Muntatge del RAID">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#formateig" class="md-nav__link">
-    Formateig
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuracio-per-a-muntatge-automatic" class="md-nav__link">
-    Configuració per a Muntatge Automàtic
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#muntatge-i-actualitzacio-del-sistema" class="md-nav__link">
-    Muntatge i Actualització del Sistema
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verificacio-del-funcionament" class="md-nav__link">
-    Verificació del Funcionament
-  </a>
-  
-    <nav class="md-nav" aria-label="Verificació del Funcionament">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creacio-dun-fitxer-de-comprovacio" class="md-nav__link">
-    Creació d'un Fitxer de Comprovació
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#desconnexio-dun-disc" class="md-nav__link">
-    Desconnexió d'un Disc
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprovacio-del-estat-del-raid" class="md-nav__link">
-    Comprovació del Estat del RAID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verificacio-de-la-integritat-de-les-dades" class="md-nav__link">
-    Verificació de la Integritat de les Dades
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reinsercio-del-disc" class="md-nav__link">
-    Reinserció del Disc
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#netejar-la-configuracio" class="md-nav__link">
-    Netejar la Configuració
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1331,17 +1111,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
@@ -1354,7 +1136,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             Sprint 1 Windows
@@ -1365,9 +1147,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../windowsserver/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Windows Server
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -1376,6 +1178,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#caracteristiques-clau" class="md-nav__link">
+    Característiques clau
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#us-habitual" class="md-nav__link">
+    Ús habitual
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#procediment-dinstallacio" class="md-nav__link">
+    Procediment d'Instal·lació
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ip-fixa" class="md-nav__link">
+    IP Fixa
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1443,95 +1293,61 @@
                   
 
 
-<h1 id="configuracio-de-raid-1">Configuració de RAID 1</h1>
-<p>Aquest document detalla el mètode per establir un RAID 1 usant dos discs d'1GB. RAID 1 copia la informació entre els discs, proporcionant redundància i seguretat en el cas que algun disc falli.</p>
-<h2 id="installacio-de-leina-de-gestio-de-raid">Instal·lació de l'eina de gestió de RAID</h2>
-<p>Instal·leu mdadm, que s'utilitzarà per crear i controlar el RAID:</p>
-<pre><code class="language-bash">sudo apt install mdadm 
-</code></pre>
-<p>Mdadm és l'eina per gestionar dispositius RAID per programari (MD) a Linux. Aquesta eina permet:
-- Crear arrays RAID amb diversos nivells (com RAID 0, RAID 1, RAID 5, etc.).
-- Monitoritzar l'estat del RAID, detectant errors i fallades de discs.
-- Reconfigurar i reconstruir l'array en cas de fallida d'un disc.
-- Facilitar la gestió i manteniment d'arranjaments RAID, millorant la redundància i seguretat de les dades.</p>
-<p>Per a instal·lar-ho:
-<img alt="alt text" src="../custom%203/raids1/1.png" width="80%" /></p>
-<h2 id="preparacio-dels-discs">Preparació dels Discs</h2>
-<h3 id="esborrat-de-la-informacio-dels-discs">Esborrat de la informació dels discs</h3>
-<p>Comproveu que els discs estan buits o que és acceptable perdre les dades emmagatzemades.</p>
-<h3 id="particionament-dels-discs">Particionament dels discs</h3>
-<p>Creeu particions indicant l'opció "t" per definir el tipus i "fd" per especificar que la partició és per Linux RAID autodetectable.</p>
-<p><img alt="alt text" src="../custom%203/raids1/2.png" width="80%" /></p>
-<h2 id="elaboracio-del-disc">Elaboració del disc</h2>
-<h2 id="creacio-del-directori-de-muntatge">Creació del Directori de Muntatge</h2>
-<p>Creeu un directori, per exemple, /mnt/raid1, i ajusteu els permisos (temporellement 777) per facilitar les proves.
-<img alt="alt text" src="../custom%203/raids1/4.png" width="80%" /></p>
-<h2 id="formacio-del-dispositiu-raid-1">Formació del Dispositiu RAID 1</h2>
-<h3 id="creacio-del-raid">Creació del RAID</h3>
-<p>Utilitzeu mdadm per unir les particions dels dos discs (per exemple, /dev/sda1 i /dev/sdb1) en un dispositiu RAID 1:</p>
-<pre><code class="language-bash">sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sda1 /dev/sdb1
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/6.png" width="80%" /></p>
-<h3 id="monitoritzacio-de-lestat-del-raid">Monitorització de l'Estat del RAID</h3>
-<p>Comproveu la creació del RAID amb:</p>
-<pre><code class="language-bash">cat /proc/mdstat
-# o
-mdadm --detail /dev/md0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/7.png" width="80%" /></p>
-<h3 id="configuracio-i-actualitzacio-de-mdadm">Configuració i Actualització de mdadm</h3>
-<p>Guardeu la configuració actual del RAID al fitxer de configuració:</p>
-<pre><code class="language-bash">mdadm --detail --scan &gt; /etc/mdadm/mdadm.conf
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/8.png" width="80%" /></p>
-<h3 id="revisio-del-fitxer-de-configuracio">Revisió del Fitxer de Configuració</h3>
-<p>Editeu el fitxer <code>/etc/mdadm/mdadm.conf</code> (per exemple, amb nano) per verificar i ajustar la configuració:</p>
-<pre><code class="language-bash">nano /etc/mdadm/mdadm.conf
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/9.png" width="80%" /></p>
-<h2 id="formatacio-i-muntatge-del-raid">Formatació i Muntatge del RAID</h2>
-<h3 id="formateig">Formateig</h3>
-<p>Un cop el RAID (<code>/dev/md0</code>) s'hagi creat i sincronitzat, formateu-lo amb un sistema d'arxius com ext4:</p>
-<pre><code class="language-bash">mkfs.ext4 /dev/md0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/10.png" width="80%" /></p>
-<h3 id="configuracio-per-a-muntatge-automatic">Configuració per a Muntatge Automàtic</h3>
-<p>Afegiu una línia a <code>/etc/fstab</code> per muntar el RAID automàticament durant l'arrencada. Exemple:</p>
-<pre><code>/dev/md0    /mnt/raid1    ext4    defaults    0    0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/16.png" width="80%" /></p>
-<h3 id="muntatge-i-actualitzacio-del-sistema">Muntatge i Actualització del Sistema</h3>
-<p>Executeu les ordres per muntar el RAID i actualitzar la configuració d'arrencada:</p>
-<pre><code class="language-bash">mount /mnt/raid1
-update-initramfs -u -k all
-</code></pre>
-<h2 id="verificacio-del-funcionament">Verificació del Funcionament</h2>
-<h3 id="creacio-dun-fitxer-de-comprovacio">Creació d'un Fitxer de Comprovació</h3>
-<p>Creeu un fitxer anomenat <code>prova.txt</code> al directori muntat per assegurar el correcte funcionament.
-<img alt="alt text" src="../custom%203/raids1/13.png" width="80%" /></p>
-<h3 id="desconnexio-dun-disc">Desconnexió d'un Disc</h3>
-<p>Simuleu una fallada desconnectant un disc del RAID:</p>
-<pre><code class="language-bash">mdadm /dev/md0 -f /dev/sdb1
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/11.png" width="80%" /></p>
-<h3 id="comprovacio-del-estat-del-raid">Comprovació del Estat del RAID</h3>
-<p>Verifiqueu que el disc <code>/dev/sdb1</code> apareix en estat "faulty":</p>
-<pre><code class="language-bash">mdadm --detail /dev/md0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/12.png" width="80%" /></p>
-<h3 id="verificacio-de-la-integritat-de-les-dades">Verificació de la Integritat de les Dades</h3>
-<p>Confirmeu que les dades romanen accessibles, per exemple, fent un <code>ls</code> al directori muntat (/mnt/raid1).</p>
-<p><img alt="alt text" src="../custom%203/raids1/13.png" width="80%" /></p>
-<h3 id="reinsercio-del-disc">Reinserció del Disc</h3>
-<p>Torneu a afegir el disc per iniciar el procés de reconstrucció:</p>
-<pre><code class="language-bash">mdadm /dev/md0 -a /dev/sdb1
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/14.png" width="80%" /></p>
-<h3 id="netejar-la-configuracio">Netejar la Configuració</h3>
+<h1 id="windows-server">Windows Server</h1>
+<p>Windows Server és un sistema dissenyat per Microsoft per gestionar servidors. Està enfocat a empreses i organitzacions que necessiten centralitzar la administració dels seus recursos, aplicacions i dades.</p>
+<h2 id="caracteristiques-clau">Característiques clau</h2>
 <ul>
-<li>Esborreu el contingut del fitxer <code>/etc/mdadm/mdadm.conf</code> (o deixeu-lo sense contingut).</li>
-<li>Elimineu o comenteu la línia afegida al fitxer <code>/etc/fstab</code>.</li>
+<li><strong>Gestió centralitzada:</strong> Facilita el control d'usuaris, grups i recursos amb eines com Active Directory.</li>
+<li><strong>Seguretat reforçada:</strong> Inclou polítiques que protegeixen la informació i limiten els accessos.</li>
+<li><strong>Monitorització de recursos:</strong> Permet fer un seguiment en temps real de l'estat del servidor i la distribució de càrrega.</li>
+<li><strong>Compatibilitat empresarial:</strong> Suporta diverses aplicacions i serveis per a entorns corporatius.</li>
 </ul>
+<h2 id="us-habitual">Ús habitual</h2>
+<ul>
+<li><strong>Active Directory:</strong> Administra usuaris, equips i polítiques de seguretat en xarxes d'empresa.</li>
+<li><strong>Servidors de fitxers i impressió:</strong> Facilita el compartiment de documents i l'administració d'impressores.</li>
+<li><strong>Hospedatge web i aplicacions:</strong> Proporciona suport per a serveis web a través d'IIS (Internet Information Services).</li>
+<li><strong>Serveis de xarxa:</strong> Permet utilitzar serveis com DHCP per a l'assignació d'IP i DNS per a la resolució de noms de domini.</li>
+</ul>
+<p>Windows Server és una opció robusta per configurar infraestructures TI, adaptable tant a petites com a grans organitzacions.</p>
+<h2 id="procediment-dinstallacio">Procediment d'Instal·lació</h2>
+<p>Per instal·lar Windows Server, el primer pas és fer clic al botó verd "Afegeix" dins de VirtualBox i seleccionar la ISO corresponent.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/1.png" /></p>
+<p>A continuació, configura la quantitat de RAM i el nombre de nuclis per la màquina virtual. En el meu cas, he assignat 4 nuclis i 4500 MB de RAM.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/2.png" /></p>
+<p>Un cop establertes aquestes opcions, inicia la màquina amb doble clic. Quan s'obre, se't demanarà escollir l'idioma; en aquesta ocasió, s'ha escollit mantenir la configuració predeterminada i fer clic a "Següent".</p>
+<p><img alt="alt text" src="../custom4/windowsserver/3.png" /></p>
+<p>Seguidament, prem el botó d'“Instal·lar”, que apareix al centre de la pantalla.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/4.png" /></p>
+<p>En la següent pantalla, selecciona la segona opció, corresponent amb la versió d'escriptori de Windows Server. Accepta els termes de llicència.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/5.png" /></p>
+<p>El procés et donarà dues opcions d'instal·lació: la personalitzada o la configuració per defecte. Per aquest cas, s'ha triat la personalitzada.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/6.png" /></p>
+<p>Selecciona el disc dur d'instal·lació; si només tens una, tria'l.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/7.png" /></p>
+<p>Finalment, un cop completada la instal·lació, segueix les indicacions a la pantalla per configurar el nom d'usuari i altres paràmetres, ajustant el sistema segons les teves necessitats.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/8.png" /></p>
+<p>I ja podem utilitzar el nsotre windows server</p>
+<p><img alt="alt text" src="../custom4/windowsserver/9.png" /></p>
+<h2 id="ip-fixa">IP Fixa</h2>
+<p>Una IP fixa és essencial en entorns de servidor per diversos motius:</p>
+<ul>
+<li>Permet configurar regles de seguretat precises en tallafocs, ja que l'adreça mai canvia.</li>
+<li>Facilita la gestió de serveis crítics com DNS, VPN o xarxes d'empreses, que requereixen una identificació constant dels dispositius.</li>
+<li>Assegura una connexió estable per a aplicacions remotes, evitant problemes de resolució d'IP dinàmica.</li>
+<li>Millora la monitorització i el manteniment, ja que cada dispositiu pot ser identificat amb claredat.</li>
+</ul>
+<p>Amb una IP fixa, la infraestructura de xarxa resulta més robusta i segura.</p>
+<p>Per a assignar una IP fixa al nostre Windows server, el que ferm serà obrir l'apartat de configuració de windows, a la part de Red e Internet. Premem damunt de Ethernet, i en blau hi ha una opció que es diu "Cambiar opcions del adaptador".</p>
+<p><img alt="alt text" src="../custom4/windowsserver/10.png" /></p>
+<p>Fem botó dret damunt de la única opció que tenim, i seleccionem l'opció propietats, un cop fet, se'ns desplegarà un menú</p>
+<p><img alt="alt text" src="../custom4/windowsserver/11.png" /></p>
+<p>En el següent menú haurem de clicar damunt de "TCP/IPV4" i després a propietats</p>
+<p><img alt="alt text" src="../custom4/windowsserver/12.png" /></p>
+<p>Després d'això activarem l'opció per a utilitzar una IP establerta per nosaltres, i haurem de posar la ip, la màscara i la porta d'enllaç.</p>
+<p><img alt="alt text" src="../custom4/windowsserver/13.png" /></p>
+<p>I com podem observar, sí que s'ha establert correctament si al terminal escrivim ipconfig</p>
+<p><img alt="alt text" src="../custom4/windowsserver/14.png" /></p>
 
 
 

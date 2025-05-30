@@ -10,10 +10,10 @@
       
       
       
-        <link rel="prev" href="../ldapgui/">
+        <link rel="prev" href="../comandesgenerals/">
       
       
-        <link rel="next" href="../raids5/">
+        <link rel="next" href="../usuaris/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Configuració de RAID 1 - Joan Bertomeu Colomé - 1r ASIX</title>
+        <title>Instal·lació d'aplicacions - Joan Bertomeu Colomé - 1r ASIX</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#configuracio-de-raid-1" class="md-skip">
+        <a href="#installacio-daplicacions" class="md-skip">
           Saltar a contenido
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Configuració de RAID 1
+              Instal·lació d'aplicacions
             
           </span>
         </div>
@@ -221,10 +221,12 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../instalacio/" class="md-tabs__link">
           
   
@@ -275,13 +277,11 @@
         
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../raids1/" class="md-tabs__link">
           
   
   Sprint 4
@@ -386,17 +386,19 @@
       
   
   
+    
+  
   
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
@@ -409,7 +411,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Sprint 1
@@ -560,9 +562,29 @@
                 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../instalacioaplicacions/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Instal·lació d'aplicacions
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -571,6 +593,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#apt-get-o-apt" class="md-nav__link">
+    apt-get o apt
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#aptitude" class="md-nav__link">
+    Aptitude
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dpkg" class="md-nav__link">
+    dpkg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositoris" class="md-nav__link">
+    Repositoris
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -929,19 +999,17 @@
       
   
   
-    
-  
   
     
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
@@ -954,7 +1022,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Sprint 4
@@ -965,29 +1033,9 @@
                 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Configuració de RAID 1
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../raids1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -996,204 +1044,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Tabla de contenidos
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#installacio-de-leina-de-gestio-de-raid" class="md-nav__link">
-    Instal·lació de l'eina de gestió de RAID
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#preparacio-dels-discs" class="md-nav__link">
-    Preparació dels Discs
-  </a>
-  
-    <nav class="md-nav" aria-label="Preparació dels Discs">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#esborrat-de-la-informacio-dels-discs" class="md-nav__link">
-    Esborrat de la informació dels discs
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#particionament-dels-discs" class="md-nav__link">
-    Particionament dels discs
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#elaboracio-del-disc" class="md-nav__link">
-    Elaboració del disc
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creacio-del-directori-de-muntatge" class="md-nav__link">
-    Creació del Directori de Muntatge
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formacio-del-dispositiu-raid-1" class="md-nav__link">
-    Formació del Dispositiu RAID 1
-  </a>
-  
-    <nav class="md-nav" aria-label="Formació del Dispositiu RAID 1">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creacio-del-raid" class="md-nav__link">
-    Creació del RAID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#monitoritzacio-de-lestat-del-raid" class="md-nav__link">
-    Monitorització de l'Estat del RAID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuracio-i-actualitzacio-de-mdadm" class="md-nav__link">
-    Configuració i Actualització de mdadm
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#revisio-del-fitxer-de-configuracio" class="md-nav__link">
-    Revisió del Fitxer de Configuració
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#formatacio-i-muntatge-del-raid" class="md-nav__link">
-    Formatació i Muntatge del RAID
-  </a>
-  
-    <nav class="md-nav" aria-label="Formatació i Muntatge del RAID">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#formateig" class="md-nav__link">
-    Formateig
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#configuracio-per-a-muntatge-automatic" class="md-nav__link">
-    Configuració per a Muntatge Automàtic
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#muntatge-i-actualitzacio-del-sistema" class="md-nav__link">
-    Muntatge i Actualització del Sistema
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#verificacio-del-funcionament" class="md-nav__link">
-    Verificació del Funcionament
-  </a>
-  
-    <nav class="md-nav" aria-label="Verificació del Funcionament">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creacio-dun-fitxer-de-comprovacio" class="md-nav__link">
-    Creació d'un Fitxer de Comprovació
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#desconnexio-dun-disc" class="md-nav__link">
-    Desconnexió d'un Disc
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#comprovacio-del-estat-del-raid" class="md-nav__link">
-    Comprovació del Estat del RAID
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#verificacio-de-la-integritat-de-les-dades" class="md-nav__link">
-    Verificació de la Integritat de les Dades
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#reinsercio-del-disc" class="md-nav__link">
-    Reinserció del Disc
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#netejar-la-configuracio" class="md-nav__link">
-    Netejar la Configuració
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1443,95 +1293,55 @@
                   
 
 
-<h1 id="configuracio-de-raid-1">Configuració de RAID 1</h1>
-<p>Aquest document detalla el mètode per establir un RAID 1 usant dos discs d'1GB. RAID 1 copia la informació entre els discs, proporcionant redundància i seguretat en el cas que algun disc falli.</p>
-<h2 id="installacio-de-leina-de-gestio-de-raid">Instal·lació de l'eina de gestió de RAID</h2>
-<p>Instal·leu mdadm, que s'utilitzarà per crear i controlar el RAID:</p>
-<pre><code class="language-bash">sudo apt install mdadm 
-</code></pre>
-<p>Mdadm és l'eina per gestionar dispositius RAID per programari (MD) a Linux. Aquesta eina permet:
-- Crear arrays RAID amb diversos nivells (com RAID 0, RAID 1, RAID 5, etc.).
-- Monitoritzar l'estat del RAID, detectant errors i fallades de discs.
-- Reconfigurar i reconstruir l'array en cas de fallida d'un disc.
-- Facilitar la gestió i manteniment d'arranjaments RAID, millorant la redundància i seguretat de les dades.</p>
-<p>Per a instal·lar-ho:
-<img alt="alt text" src="../custom%203/raids1/1.png" width="80%" /></p>
-<h2 id="preparacio-dels-discs">Preparació dels Discs</h2>
-<h3 id="esborrat-de-la-informacio-dels-discs">Esborrat de la informació dels discs</h3>
-<p>Comproveu que els discs estan buits o que és acceptable perdre les dades emmagatzemades.</p>
-<h3 id="particionament-dels-discs">Particionament dels discs</h3>
-<p>Creeu particions indicant l'opció "t" per definir el tipus i "fd" per especificar que la partició és per Linux RAID autodetectable.</p>
-<p><img alt="alt text" src="../custom%203/raids1/2.png" width="80%" /></p>
-<h2 id="elaboracio-del-disc">Elaboració del disc</h2>
-<h2 id="creacio-del-directori-de-muntatge">Creació del Directori de Muntatge</h2>
-<p>Creeu un directori, per exemple, /mnt/raid1, i ajusteu els permisos (temporellement 777) per facilitar les proves.
-<img alt="alt text" src="../custom%203/raids1/4.png" width="80%" /></p>
-<h2 id="formacio-del-dispositiu-raid-1">Formació del Dispositiu RAID 1</h2>
-<h3 id="creacio-del-raid">Creació del RAID</h3>
-<p>Utilitzeu mdadm per unir les particions dels dos discs (per exemple, /dev/sda1 i /dev/sdb1) en un dispositiu RAID 1:</p>
-<pre><code class="language-bash">sudo mdadm --create /dev/md0 --level=1 --raid-devices=2 /dev/sda1 /dev/sdb1
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/6.png" width="80%" /></p>
-<h3 id="monitoritzacio-de-lestat-del-raid">Monitorització de l'Estat del RAID</h3>
-<p>Comproveu la creació del RAID amb:</p>
-<pre><code class="language-bash">cat /proc/mdstat
-# o
-mdadm --detail /dev/md0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/7.png" width="80%" /></p>
-<h3 id="configuracio-i-actualitzacio-de-mdadm">Configuració i Actualització de mdadm</h3>
-<p>Guardeu la configuració actual del RAID al fitxer de configuració:</p>
-<pre><code class="language-bash">mdadm --detail --scan &gt; /etc/mdadm/mdadm.conf
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/8.png" width="80%" /></p>
-<h3 id="revisio-del-fitxer-de-configuracio">Revisió del Fitxer de Configuració</h3>
-<p>Editeu el fitxer <code>/etc/mdadm/mdadm.conf</code> (per exemple, amb nano) per verificar i ajustar la configuració:</p>
-<pre><code class="language-bash">nano /etc/mdadm/mdadm.conf
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/9.png" width="80%" /></p>
-<h2 id="formatacio-i-muntatge-del-raid">Formatació i Muntatge del RAID</h2>
-<h3 id="formateig">Formateig</h3>
-<p>Un cop el RAID (<code>/dev/md0</code>) s'hagi creat i sincronitzat, formateu-lo amb un sistema d'arxius com ext4:</p>
-<pre><code class="language-bash">mkfs.ext4 /dev/md0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/10.png" width="80%" /></p>
-<h3 id="configuracio-per-a-muntatge-automatic">Configuració per a Muntatge Automàtic</h3>
-<p>Afegiu una línia a <code>/etc/fstab</code> per muntar el RAID automàticament durant l'arrencada. Exemple:</p>
-<pre><code>/dev/md0    /mnt/raid1    ext4    defaults    0    0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/16.png" width="80%" /></p>
-<h3 id="muntatge-i-actualitzacio-del-sistema">Muntatge i Actualització del Sistema</h3>
-<p>Executeu les ordres per muntar el RAID i actualitzar la configuració d'arrencada:</p>
-<pre><code class="language-bash">mount /mnt/raid1
-update-initramfs -u -k all
-</code></pre>
-<h2 id="verificacio-del-funcionament">Verificació del Funcionament</h2>
-<h3 id="creacio-dun-fitxer-de-comprovacio">Creació d'un Fitxer de Comprovació</h3>
-<p>Creeu un fitxer anomenat <code>prova.txt</code> al directori muntat per assegurar el correcte funcionament.
-<img alt="alt text" src="../custom%203/raids1/13.png" width="80%" /></p>
-<h3 id="desconnexio-dun-disc">Desconnexió d'un Disc</h3>
-<p>Simuleu una fallada desconnectant un disc del RAID:</p>
-<pre><code class="language-bash">mdadm /dev/md0 -f /dev/sdb1
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/11.png" width="80%" /></p>
-<h3 id="comprovacio-del-estat-del-raid">Comprovació del Estat del RAID</h3>
-<p>Verifiqueu que el disc <code>/dev/sdb1</code> apareix en estat "faulty":</p>
-<pre><code class="language-bash">mdadm --detail /dev/md0
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/12.png" width="80%" /></p>
-<h3 id="verificacio-de-la-integritat-de-les-dades">Verificació de la Integritat de les Dades</h3>
-<p>Confirmeu que les dades romanen accessibles, per exemple, fent un <code>ls</code> al directori muntat (/mnt/raid1).</p>
-<p><img alt="alt text" src="../custom%203/raids1/13.png" width="80%" /></p>
-<h3 id="reinsercio-del-disc">Reinserció del Disc</h3>
-<p>Torneu a afegir el disc per iniciar el procés de reconstrucció:</p>
-<pre><code class="language-bash">mdadm /dev/md0 -a /dev/sdb1
-</code></pre>
-<p><img alt="alt text" src="../custom%203/raids1/14.png" width="80%" /></p>
-<h3 id="netejar-la-configuracio">Netejar la Configuració</h3>
-<ul>
-<li>Esborreu el contingut del fitxer <code>/etc/mdadm/mdadm.conf</code> (o deixeu-lo sense contingut).</li>
-<li>Elimineu o comenteu la línia afegida al fitxer <code>/etc/fstab</code>.</li>
-</ul>
+<h1 id="installacio-daplicacions">Instal·lació d'aplicacions</h1>
+<h2 id="apt-get-o-apt">apt-get o apt</h2>
+<p>Per començar instal·larem un programa mitjançant apt install. Aquest programa és VLC, un reproductor multimèdia</p>
+<p><img alt="alt text" src="../custom/aptinstall1.png" /></p>
+<p>Com podem observar l'aplicació està dintre del nostre sistema</p>
+<p><img alt="alt text" src="../custom/aptinstall2.png" /></p>
+<p>I també podem observar que funciona correctament.</p>
+<p><img alt="alt text" src="../custom/aptinstall3.png" /></p>
+<p>Ara, el que farem sera desinstal·lar l'aplicació per a comprovar la desisntalació mitjançant apt purge</p>
+<p><img alt="alt text" src="../custom/aptinstall4.png" /></p>
+<p>Finalment, veiem que l'aplicació VLC ja no esta dintre del sistema.</p>
+<p><img alt="alt text" src="../custom/aptinstall5.png" /></p>
+<h2 id="aptitude">Aptitude</h2>
+<p>Ara, descarreguem aptitude per a la instal·lació de paquets. </p>
+<p><img alt="alt text" src="../custom/aptitude1.png" /></p>
+<p>Un cop tenim l'aptitude, instal·larem de nou l'aplicació VLC, però aquest cop, mitjançant aptitude.</p>
+<p><img alt="alt text" src="../custom/aptitude2.png" /></p>
+<p>De nou, tenim l'aplicació VLC dintre del nostre sistema.</p>
+<p><img alt="alt text" src="../custom/aptitude3.png" /></p>
+<p>I ara, el tornem a esborrar.</p>
+<p><img alt="alt text" src="../custom/aptitude4.png" /></p>
+<p>Com podem observar, ara ja no torna a estar l'aplicació VLC</p>
+<p><img alt="alt text" src="../custom/aptitude5.png" /></p>
+<h2 id="dpkg">dpkg</h2>
+<p>Per a instal·lar mitjançant dpkg necessitarem un arxiu .deb normalment. Aquest cop, instal·larem discord.</p>
+<p><img alt="alt text" src="../custom/dpkg.png" />
+Ara, ja tenim l'aplicació en el nostre sistema</p>
+<p><img alt="alt text" src="../custom/dpkg3.png" /></p>
+<p>I també s'obri correctament.</p>
+<p><img alt="alt text" src="../custom/dpkg2.png" /></p>
+<p>Ara, desinstalarem discord amb dpkg -r discord.</p>
+<p><img alt="alt text" src="../custom/dpkg4.png" /></p>
+<p>I com podem observar, Discord ja no està dintre del nostre sistema. </p>
+<p><img alt="alt text" src="../custom/dpkg5.png" /></p>
+<h2 id="repositoris">Repositoris</h2>
+<p>Descarrega la clau de verificació: Utilitza wget per obtenir la clau amb la que es verificarà el repositori.</p>
+<p><img alt="Clau del repositori" src="../custom/repositori1.png" /></p>
+<p>Afegeix el repositori: Incorpora la línia corresponent al repositori de Google Chrome amb <code>echo deb</code> per tal que el sistema el reconegui.</p>
+<p><img alt="Afegir repositori" src="../custom/repositori2.png" /></p>
+<p>Actualitza la llista de paquets: Executa <code>apt update</code> per obtenir la informació més recent dels paquets disponibles.</p>
+<p><img alt="Actualització del sistema" src="../custom/repositori3.png" /></p>
+<p>Instal·la Google Chrome: Un cop actualitzada la llista, instal·la la versió estable de Google Chrome amb <code>sudo apt install google-chrome-stable</code>.</p>
+<p><img alt="Instal·lació de Google Chrome" src="../custom/repositori4.png" /></p>
+<p>Inicia Google Chrome: Obre el navegador per confirmar que la instal·lació s'ha completat correctament.</p>
+<p><img alt="Obrir Google Chrome" src="../custom/repositori5.png" /></p>
+<p>Ara, desisntal·larem google chrome</p>
+<p><img alt="Obrir Google Chrome" src="../custom/repositori6.png" /></p>
+<p>I com podem obersvar, ja no existeix google chrome dintre del nostre dispositiu</p>
+<p><img alt="Obrir Google Chrome" src="../custom/repositori7.png" /></p>
 
 
 

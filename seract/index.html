@@ -310,6 +310,24 @@
   
 
       
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../windowsserver/" class="md-tabs__link">
+          
+  
+  Sprint 1 Windows
+
+        </a>
+      </li>
+    
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -424,6 +442,46 @@
   
   
     <li class="md-nav__item">
+      <a href="../timeshift/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Punts de restauració amb Timeshift
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../puntsrestauracio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restauració del grub
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../llicencies/" class="md-nav__link">
         
   
@@ -444,11 +502,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../puntsrestauracio/" class="md-nav__link">
+      <a href="../arrancada/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Punts de restauració
+    Gestors d'arrancada i sistemes d'emmagatzematge
   </span>
   
 
@@ -484,11 +542,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../timeshift/" class="md-nav__link">
+      <a href="../comandesgenerals/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Instal·lació del timeshift
+    Comandes Generals
   </span>
   
 
@@ -504,31 +562,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../pinning/" class="md-nav__link">
+      <a href="../instalacioaplicacions/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Pinning packet
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../arrancada/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Gestors d'arrancada i sistemes d'emmagatzematge
+    Instal·lació d'aplicacions
   </span>
   
 
@@ -1180,6 +1218,107 @@
   
 
     
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Sprint 1 Windows
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Sprint 1 Windows
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../windowsserver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows Server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../windows10/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Windows 10 Pro
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../llicencieswindows/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Llicències Windows
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -1249,9 +1388,6 @@ A continuació, s'inicia l'eina apt-mirror amb privilegis de superusuari (mitjan
 <hr />
 <p><img alt="Documentació Visual" src="../custom%203/ser_acts/3.png" /></p>
 <hr />
-<blockquote>
-<p><strong>Nota:</strong> Un cop finalitzat el procés, es crea un enllaç simbòlic cap al paquet (per exemple, el de Google) dins del directori <code>/var/www/html</code>. Això garanteix que tots els fitxers descarregats siguin accessibles via Apache2.</p>
-</blockquote>
 <p><img alt="Enllaç Simbòlic Creant Accés" src="../custom%203/ser_acts/4.png" /></p>
 <hr />
 <h2 id="configuracio-dels-clients">Configuració dels Clients</h2>
@@ -1275,6 +1411,9 @@ A continuació, s'inicia l'eina apt-mirror amb privilegis de superusuari (mitjan
     <code>deb [arch=amd64] http://10.0.2.15/dl.google.com/linux/chrome/deb stable main</code></p>
 <p><img alt="Editant sources.list" src="../custom%203/ser_acts/8.png" /></p>
 </li>
+</ol>
+<p>REFER</p>
+<ol>
 <li>
 <p><strong>Actualitza Novament i Verifica la Connexió</strong><br />
     Desada la configuració i torna a executar:
@@ -1289,6 +1428,7 @@ A continuació, s'inicia l'eina apt-mirror amb privilegis de superusuari (mitjan
 <p><img alt="Instal·lació de Firefox" src="../custom%203/ser_acts/7.png" /></p>
 </li>
 </ol>
+<p>REFER</p>
 
 
 
