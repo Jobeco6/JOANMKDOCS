@@ -1331,27 +1331,20 @@
 </code></pre>
 <p>A mesura que Llanis treballa, et mostrarà un índex interactiu que es va incrementant amb cada recomanació aplicada.</p>
 <p><img alt="alt text" src="../custom%203/lynis/2.png" /></p>
-<p>A baix de tot podem veure l'índex.</p>
-<p><img alt="alt text" src="../custom%203/lynis/3.png" /></p>
-<p>I una mica més a dalt del índex podem veure les recomanacions.</p>
-<p><img alt="alt text" src="../custom%203/lynis/4.png" /></p>
-<p>Amb aquesta comanda corregim alguns paquets restants. </p>
-<pre><code>sudo apt update &amp;&amp; sudo apt install -y apt-listchanges needrestart fail2ban
-</code></pre>
-<p><img alt="alt text" src="../custom%203/lynis/6.png" /></p>
-<p>I com podem comprova, l'índex puja de 58 a 60. Anem poc a poc</p>
-<p><img alt="alt text" src="../custom%203/lynis/5.png" /></p>
-<p>Després d'això fem un</p>
-<pre><code>sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get dist-upgrade
-</code></pre>
-<p>Això tardarà una molt, bona estona. </p>
-<p><img alt="alt text" src="../custom%203/lynis/7.png" /></p>
-<p>Després d'una llarga espera, obtenim un 4% més</p>
-<p><img alt="alt text" src="../custom%203/lynis/8.png" /></p>
-<p>Després d'executar vàries comandes (chatgpt ens pot ajudar molt a trobar les comandes qu hem d'executar), arribem al 67%.</p>
-<p><img alt="alt text" src="../custom%203/lynis/10.png" /></p>
+<p>A baix de tot podem veure l'índex. Com podem observar, actualment nosaltres tenim un Hardening índex del 61, intentarem fer-lo arribar al 70 com a mínim</p>
+<p><img alt="alt text" src="../custom4/grafana/lynis1.png" width="80%" /></p>
+<p>Una de les coses que ens recomana lynis és deshabilitar seveis innecessaris</p>
+<p><img alt="alt text" src="../custom4/grafana/lynis2.png" width="80%" /></p>
+<p>També ens recomana instal·lar algun programa de seguretat, com ara fail2ban, que impedeix l'acces a usuaris que s'han equivocat amb la contrasenya més vegades de les establertes.
+<img alt="alt text" src="../custom4/grafana/lynis3.png" width="80%" /></p>
+<p>També ens recomana deshabilitar usb no reconeguts.</p>
+<p><img alt="alt text" src="../custom4/grafana/lynis4.png" width="80%" /></p>
+<p>A vegades, amb un simple apt upgrade i un apt update, podem millorar-ho</p>
+<p><img alt="alt text" src="../custom4/grafana/lynis5.png" width="80%" /></p>
+<p>Instalem un antivirus</p>
+<p><img alt="alt text" src="../custom4/grafana/lynis7.png" width="80%" /></p>
+<p>I com podem observar, si tornem a fer la comanda per a revisar el Hardening index, ha pujat fins al 72.</p>
+<p><img alt="alt text" src="../custom4/grafana/lynis6.png" width="80%" /></p>
 
 
 

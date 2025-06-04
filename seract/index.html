@@ -1408,27 +1408,24 @@ A continuació, s'inicia l'eina apt-mirror amb privilegis de superusuari (mitjan
     Obre el fitxer de configuració:
     <code>nano /etc/apt/sources.list</code>
     I afegeix l’entrada amb la ruta del nostre servidor:
-    <code>deb [arch=amd64] http://10.0.2.15/dl.google.com/linux/chrome/deb stable main</code></p>
+    <code>deb [arch=amd64] http://1192.168.1.203/dl.google.com/linux/chrome/deb stable main</code></p>
 <p><img alt="Editant sources.list" src="../custom%203/ser_acts/8.png" /></p>
 </li>
 </ol>
 <p>REFER</p>
 <ol>
-<li>
-<p><strong>Actualitza Novament i Verifica la Connexió</strong><br />
+<li><strong>Actualitza Novament i Verifica la Connexió</strong><br />
     Desada la configuració i torna a executar:
     <code>sudo apt update</code>
-    Comprova que el paquet es descarrega directament des del servidor amb IP 10.0.2.15.</p>
-<p><img alt="Actualització Executada" src="../custom%203/ser_acts/6.png" /></p>
-</li>
-<li>
-<p><strong>Instal·la Firefox</strong><br />
-    Per finalitzar, instal·la Firefox amb:
-    <code>apt install firefox</code></p>
-<p><img alt="Instal·lació de Firefox" src="../custom%203/ser_acts/7.png" /></p>
-</li>
+    Comprova que el paquet es descarrega directament des del servidor amb IP 192.168.1.203.</li>
 </ol>
-<p>REFER</p>
+<p><img alt="alt text" src="../custom4/grafana/32.png" width="80%" /></p>
+<ol>
+<li><strong>Instal·la chrome</strong><br />
+    Per finalitzar, instal·la Firefox amb:
+    <code>apt install google-chrome-stable</code></li>
+</ol>
+<p><img alt="alt text" src="../custom4/grafana/33.png" width="80%" /></p>
 
 
 
